@@ -70,15 +70,26 @@ class NCFile:
 		return numBands
 
 	def createGeotiffFolder(self,outfoldername):
-		outpath = os.getcwd()+outfoldername;
-		if not os.path.exists(outpath):
-			os.makedirs(outpath)
-		self.outpath = outpath
+		if not os.path.exists(outfoldername):
+			os.makedirs(outfoldername)
+		self.outpath = outfoldername + '\\'
+
+	def setName(self, newName):
+		self.filename = newName
+	
+	def getName(self):
+		return self.filename
+
+	def replaceYearSuffix(self, newsuffix):
+		# pr_Amon_bcc-csm1-1_rcp85_r1i1p1_200601-209912.nc
+		lastUnderscore = self.filename.rfind('_')
+		self.newfilename = self.filename[:lastUnderscore+1] + newsuffix + '.tif'
+
 
 	def createAsGeotiff(self, bandinfo=''):
 		firstpart = 'gdal_translate -of GTiff '
 		firstpart  = firstpart + bandinfo
-		command = "{0} {1} {2}{3}".format(firstpart,self.filename,self.outpath+self.filename[self.filename.rfind('\\'):self.filename.rfind('.')],'.tif');
+		command = "{0} {1} {2}{3}".format(firstpart,self.filename,self.outpath+self.newfilename[self.newfilename.rfind('\\'):self.newfilename.rfind('.')],'.tif');
 		os.system(command)
 		
 
@@ -103,24 +114,46 @@ def parsepath(path):
 
 	return sd;
 
+# assuming january start
+def createYearBandSuffix(startYear, numMonths):
+	extraMonths = numMonths%12
+	if extraMonths != 0:
+		print 'warning: extra months {0}'.format(extraMonths)
+	numYears = (numMonths//12) - 1
+	
+	return str(startYear) + '01-'+ str(numYears + startYear) + '12'
 
-root = 'F:\\climate\\monthlypr\\v2test\\';
-childfiles = os.listdir(root)
 
-for ncfile in childfiles:
-	sd  = parsepath(root + ncfile)
-	if sd != None:
-		sd.createGeotiffFolder('outTifffs')
-		print "{0}".format(root + ncfile)
-		if sd.isProcessible():
-			
-			# sd.createAsGeotiff()
-			print "sy:\t\t{0}".format(sd.findBestStartYear())
-			print "blocks:\t\t{0}".format(sd.getNumberOfBlocks())
-			print "startyear:\t\t{0}".format(sd.calculateStartMonth(2020))
-			calculatedStartMonth = sd.calculateStartMonth(2020) 
-			if calculatedStartMonth != None:
-				bandinfo = sd.createBandSwtich(int(calculatedStartMonth),20)
-				sd.createAsGeotiff(bandinfo)
+
+def parsenc():
+	root = 'F:\\climate\\monthlypr\\v2test\\';
+	childfiles = os.listdir(root)
+	outTiffPath = 'C:\\Users\\Johnny\\Documents\\climatev2\\outgeotiff_20'
+	year = 2020
+	numMonths = 12*20
+	newsuffix = createYearBandSuffix(year,numMonths)
+
+	for ncfile in childfiles:
+		sd  = parsepath(root + ncfile)
+		if sd != None:
+			sd.createGeotiffFolder(outTiffPath)
+
+			print "{0}".format(root + ncfile)
+			if sd.isProcessible():
+				sd.replaceYearSuffix(newsuffix)
+				# sd.createAsGeotiff()
+				print 'new out {0} '.format(sd.filename)
+				print "sy:\t\t{0}".format(sd.findBestStartYear())
+				print "blocks:\t\t{0}".format(sd.getNumberOfBlocks())
+				print "startmonth:\t\t{0}".format(sd.calculateStartMonth(year))
+
+				calculatedStartMonth = sd.calculateStartMonth(year) 
+				if calculatedStartMonth != None:
+					bandinfo = sd.createBandSwtich(int(calculatedStartMonth),20*12)
+					sd.createAsGeotiff(bandinfo)
+
+parsenc()
+
+
 				
 			
