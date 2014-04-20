@@ -1,0 +1,1411 @@
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_bcc-csm1-1-m_rcp26_r1i1p1_200601-210012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_bcc-csm1-1-m_rcp26_r1i1p1_200601-210012.nc 
+sy:		2060
+working
+blocks:		4
+startmonth:		649
+creating:	yes
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_bcc-csm1-1-m_rcp45_r1i1p1_200601-210012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_bcc-csm1-1-m_rcp45_r1i1p1_200601-210012.nc 
+sy:		2060
+working
+blocks:		4
+startmonth:		649
+creating:	yes
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_bcc-csm1-1-m_rcp60_r1i1p1_200601-210012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_bcc-csm1-1-m_rcp60_r1i1p1_200601-210012.nc 
+sy:		2060
+working
+blocks:		4
+startmonth:		649
+creating:	yes
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_bcc-csm1-1_rcp26_r1i1p1_200601-209912.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_bcc-csm1-1_rcp26_r1i1p1_200601-209912.nc 
+sy:		2060
+working
+blocks:		3
+startmonth:		649
+creating:	yes
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_bcc-csm1-1_rcp26_r1i1p1_210001-230012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_bcc-csm1-1_rcp26_r1i1p1_210001-230012.nc 
+sy:		None
+blocks:		0
+startmonth:		None
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_bcc-csm1-1_rcp45_r1i1p1_200601-209912.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_bcc-csm1-1_rcp45_r1i1p1_200601-209912.nc 
+sy:		2060
+working
+blocks:		3
+startmonth:		649
+creating:	yes
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_bcc-csm1-1_rcp60_r1i1p1_200601-209912.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_bcc-csm1-1_rcp60_r1i1p1_200601-209912.nc 
+sy:		2060
+working
+blocks:		3
+startmonth:		649
+creating:	yes
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_bcc-csm1-1_rcp60_r1i1p1_210001-210012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_bcc-csm1-1_rcp60_r1i1p1_210001-210012.nc 
+sy:		None
+blocks:		0
+startmonth:		None
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_bcc-csm1-1_rcp85_r1i1p1_200601-209912.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_bcc-csm1-1_rcp85_r1i1p1_200601-209912.nc 
+sy:		2060
+working
+blocks:		3
+startmonth:		649
+creating:	yes
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_BNU-ESM_rcp26_r1i1p1_200601-210012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_BNU-ESM_rcp26_r1i1p1_200601-210012.nc 
+sy:		2060
+working
+blocks:		4
+startmonth:		649
+creating:	yes
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_BNU-ESM_rcp45_r1i1p1_200601-210012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_BNU-ESM_rcp45_r1i1p1_200601-210012.nc 
+sy:		2060
+working
+blocks:		4
+startmonth:		649
+creating:	yes
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_BNU-ESM_rcp85_r1i1p1_200601-210012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_BNU-ESM_rcp85_r1i1p1_200601-210012.nc 
+sy:		2060
+working
+blocks:		4
+startmonth:		649
+creating:	yes
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_CanCM4_rcp45_r1i1p1_200601-203512.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_CanCM4_rcp45_r1i1p1_200601-203512.nc 
+sy:		None
+blocks:		0
+startmonth:		649
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_CanESM2_rcp26_r1i1p1_200601-210012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_CanESM2_rcp26_r1i1p1_200601-210012.nc 
+sy:		2060
+working
+blocks:		4
+startmonth:		649
+creating:	yes
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_CanESM2_rcp26_r1i1p1_210101-230012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_CanESM2_rcp26_r1i1p1_210101-230012.nc 
+sy:		None
+blocks:		0
+startmonth:		None
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_CanESM2_rcp45_r1i1p1_200601-210012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_CanESM2_rcp45_r1i1p1_200601-210012.nc 
+sy:		2060
+working
+blocks:		4
+startmonth:		649
+creating:	yes
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_CanESM2_rcp85_r1i1p1_200601-210012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_CanESM2_rcp85_r1i1p1_200601-210012.nc 
+sy:		2060
+working
+blocks:		4
+startmonth:		649
+creating:	yes
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_CCSM4_rcp26_r1i1p1_200601-210012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_CCSM4_rcp26_r1i1p1_200601-210012.nc 
+sy:		2060
+working
+blocks:		4
+startmonth:		649
+creating:	yes
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_CMCC-CMS_rcp45_r1i1p1_200601-200912.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_CMCC-CMS_rcp45_r1i1p1_200601-200912.nc 
+sy:		None
+blocks:		0
+startmonth:		649
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_CMCC-CMS_rcp45_r1i1p1_201001-201912.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_CMCC-CMS_rcp45_r1i1p1_201001-201912.nc 
+sy:		None
+blocks:		0
+startmonth:		601
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_CMCC-CMS_rcp45_r1i1p1_202001-202912.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_CMCC-CMS_rcp45_r1i1p1_202001-202912.nc 
+sy:		None
+blocks:		0
+startmonth:		481
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_CMCC-CMS_rcp45_r1i1p1_203001-203912.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_CMCC-CMS_rcp45_r1i1p1_203001-203912.nc 
+sy:		None
+blocks:		0
+startmonth:		361
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_CMCC-CMS_rcp45_r1i1p1_204001-204912.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_CMCC-CMS_rcp45_r1i1p1_204001-204912.nc 
+sy:		None
+blocks:		0
+startmonth:		241
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_CMCC-CMS_rcp45_r1i1p1_205001-205912.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_CMCC-CMS_rcp45_r1i1p1_205001-205912.nc 
+sy:		None
+blocks:		0
+startmonth:		121
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_CMCC-CMS_rcp45_r1i1p1_206001-206912.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_CMCC-CMS_rcp45_r1i1p1_206001-206912.nc 
+sy:		None
+blocks:		0
+startmonth:		1
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_CMCC-CMS_rcp45_r1i1p1_207001-207912.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_CMCC-CMS_rcp45_r1i1p1_207001-207912.nc 
+sy:		None
+blocks:		0
+startmonth:		None
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_CMCC-CMS_rcp45_r1i1p1_208001-208912.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_CMCC-CMS_rcp45_r1i1p1_208001-208912.nc 
+sy:		None
+blocks:		0
+startmonth:		None
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_CMCC-CMS_rcp45_r1i1p1_209001-210012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_CMCC-CMS_rcp45_r1i1p1_209001-210012.nc 
+sy:		None
+blocks:		0
+startmonth:		None
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_CMCC-CMS_rcp85_r1i1p1_200601-200912.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_CMCC-CMS_rcp85_r1i1p1_200601-200912.nc 
+sy:		None
+blocks:		0
+startmonth:		649
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_CMCC-CMS_rcp85_r1i1p1_201001-201912.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_CMCC-CMS_rcp85_r1i1p1_201001-201912.nc 
+sy:		None
+blocks:		0
+startmonth:		601
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_CMCC-CMS_rcp85_r1i1p1_202001-202912.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_CMCC-CMS_rcp85_r1i1p1_202001-202912.nc 
+sy:		None
+blocks:		0
+startmonth:		481
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_CMCC-CMS_rcp85_r1i1p1_203001-203912.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_CMCC-CMS_rcp85_r1i1p1_203001-203912.nc 
+sy:		None
+blocks:		0
+startmonth:		361
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_CMCC-CMS_rcp85_r1i1p1_204001-204912.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_CMCC-CMS_rcp85_r1i1p1_204001-204912.nc 
+sy:		None
+blocks:		0
+startmonth:		241
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_CMCC-CMS_rcp85_r1i1p1_205001-205912.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_CMCC-CMS_rcp85_r1i1p1_205001-205912.nc 
+sy:		None
+blocks:		0
+startmonth:		121
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_CMCC-CMS_rcp85_r1i1p1_206001-206912.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_CMCC-CMS_rcp85_r1i1p1_206001-206912.nc 
+sy:		None
+blocks:		0
+startmonth:		1
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_CMCC-CMS_rcp85_r1i1p1_207001-207912.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_CMCC-CMS_rcp85_r1i1p1_207001-207912.nc 
+sy:		None
+blocks:		0
+startmonth:		None
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_CMCC-CMS_rcp85_r1i1p1_208001-208912.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_CMCC-CMS_rcp85_r1i1p1_208001-208912.nc 
+sy:		None
+blocks:		0
+startmonth:		None
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_CMCC-CMS_rcp85_r1i1p1_209001-210012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_CMCC-CMS_rcp85_r1i1p1_209001-210012.nc 
+sy:		None
+blocks:		0
+startmonth:		None
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_CNRM-CM5_rcp26_r1i1p1_200601-205512.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_CNRM-CM5_rcp26_r1i1p1_200601-205512.nc 
+sy:		None
+working
+blocks:		1
+startmonth:		649
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_CNRM-CM5_rcp26_r1i1p1_205601-210012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_CNRM-CM5_rcp26_r1i1p1_205601-210012.nc 
+sy:		2060
+working
+blocks:		2
+startmonth:		49
+creating:	yes
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_CNRM-CM5_rcp45_r1i1p1_200601-205512.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_CNRM-CM5_rcp45_r1i1p1_200601-205512.nc 
+sy:		None
+working
+blocks:		1
+startmonth:		649
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_CNRM-CM5_rcp45_r1i1p1_205601-210012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_CNRM-CM5_rcp45_r1i1p1_205601-210012.nc 
+sy:		2060
+working
+blocks:		2
+startmonth:		49
+creating:	yes
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_CNRM-CM5_rcp85_r1i1p1_200601-205512.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_CNRM-CM5_rcp85_r1i1p1_200601-205512.nc 
+sy:		None
+working
+blocks:		1
+startmonth:		649
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_CNRM-CM5_rcp85_r1i1p1_205601-210012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_CNRM-CM5_rcp85_r1i1p1_205601-210012.nc 
+sy:		2060
+working
+blocks:		2
+startmonth:		49
+creating:	yes
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_CNRM-CM5_rcp85_r1i1p1_210101-215012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_CNRM-CM5_rcp85_r1i1p1_210101-215012.nc 
+sy:		None
+blocks:		0
+startmonth:		None
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_CSIRO-Mk3-6-0_rcp26_r1i1p1_200601-210012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_CSIRO-Mk3-6-0_rcp26_r1i1p1_200601-210012.nc 
+sy:		2060
+working
+blocks:		4
+startmonth:		649
+creating:	yes
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_CSIRO-Mk3-6-0_rcp45_r1i1p1_200601-210012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_CSIRO-Mk3-6-0_rcp45_r1i1p1_200601-210012.nc 
+sy:		2060
+working
+blocks:		4
+startmonth:		649
+creating:	yes
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_CSIRO-Mk3-6-0_rcp45_r1i1p1_210101-230012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_CSIRO-Mk3-6-0_rcp45_r1i1p1_210101-230012.nc 
+sy:		None
+blocks:		0
+startmonth:		None
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_CSIRO-Mk3-6-0_rcp60_r1i1p1_200601-210012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_CSIRO-Mk3-6-0_rcp60_r1i1p1_200601-210012.nc 
+sy:		2060
+working
+blocks:		4
+startmonth:		649
+creating:	yes
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_CSIRO-Mk3-6-0_rcp85_r1i1p1_200601-210012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_CSIRO-Mk3-6-0_rcp85_r1i1p1_200601-210012.nc 
+sy:		2060
+working
+blocks:		4
+startmonth:		649
+creating:	yes
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_CSIRO-Mk3-6-0_rcp85_r1i1p1_210101-230012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_CSIRO-Mk3-6-0_rcp85_r1i1p1_210101-230012.nc 
+sy:		None
+blocks:		0
+startmonth:		None
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp26_r1i1p1_200601-201512.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp26_r1i1p1_200601-201512.nc 
+sy:		None
+blocks:		0
+startmonth:		649
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp26_r1i1p1_201601-202512.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp26_r1i1p1_201601-202512.nc 
+sy:		None
+blocks:		0
+startmonth:		529
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp26_r1i1p1_202601-203512.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp26_r1i1p1_202601-203512.nc 
+sy:		None
+blocks:		0
+startmonth:		409
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp26_r1i1p1_203601-204512.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp26_r1i1p1_203601-204512.nc 
+sy:		None
+blocks:		0
+startmonth:		289
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp26_r1i1p1_204601-205512.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp26_r1i1p1_204601-205512.nc 
+sy:		None
+blocks:		0
+startmonth:		169
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp26_r1i1p1_205601-206512.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp26_r1i1p1_205601-206512.nc 
+sy:		None
+blocks:		0
+startmonth:		49
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp26_r1i1p1_206601-207512.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp26_r1i1p1_206601-207512.nc 
+sy:		None
+blocks:		0
+startmonth:		None
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp26_r1i1p1_207601-208512.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp26_r1i1p1_207601-208512.nc 
+sy:		None
+blocks:		0
+startmonth:		None
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp26_r1i1p1_208601-209512.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp26_r1i1p1_208601-209512.nc 
+sy:		None
+blocks:		0
+startmonth:		None
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp26_r1i1p1_209601-210112.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp26_r1i1p1_209601-210112.nc 
+sy:		None
+blocks:		0
+startmonth:		None
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp45_r1i1p1_200601-201512.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp45_r1i1p1_200601-201512.nc 
+sy:		None
+blocks:		0
+startmonth:		649
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp45_r1i1p1_201601-202512.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp45_r1i1p1_201601-202512.nc 
+sy:		None
+blocks:		0
+startmonth:		529
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp45_r1i1p1_202601-203512.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp45_r1i1p1_202601-203512.nc 
+sy:		None
+blocks:		0
+startmonth:		409
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp45_r1i1p1_203601-204512.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp45_r1i1p1_203601-204512.nc 
+sy:		None
+blocks:		0
+startmonth:		289
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp45_r1i1p1_204601-205512.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp45_r1i1p1_204601-205512.nc 
+sy:		None
+blocks:		0
+startmonth:		169
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp45_r1i1p1_205601-206512.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp45_r1i1p1_205601-206512.nc 
+sy:		None
+blocks:		0
+startmonth:		49
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp45_r1i1p1_206601-207512.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp45_r1i1p1_206601-207512.nc 
+sy:		None
+blocks:		0
+startmonth:		None
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp45_r1i1p1_207601-208512.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp45_r1i1p1_207601-208512.nc 
+sy:		None
+blocks:		0
+startmonth:		None
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp45_r1i1p1_208601-209512.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp45_r1i1p1_208601-209512.nc 
+sy:		None
+blocks:		0
+startmonth:		None
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp45_r1i1p1_209601-210512.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp45_r1i1p1_209601-210512.nc 
+sy:		None
+blocks:		0
+startmonth:		None
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp45_r1i1p1_210601-211512.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp45_r1i1p1_210601-211512.nc 
+sy:		None
+blocks:		0
+startmonth:		None
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp45_r1i1p1_211601-212512.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp45_r1i1p1_211601-212512.nc 
+sy:		None
+blocks:		0
+startmonth:		None
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp45_r1i1p1_212601-213512.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp45_r1i1p1_212601-213512.nc 
+sy:		None
+blocks:		0
+startmonth:		None
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp45_r1i1p1_213601-214512.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp45_r1i1p1_213601-214512.nc 
+sy:		None
+blocks:		0
+startmonth:		None
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp45_r1i1p1_214601-215512.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp45_r1i1p1_214601-215512.nc 
+sy:		None
+blocks:		0
+startmonth:		None
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp45_r1i1p1_215601-216512.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp45_r1i1p1_215601-216512.nc 
+sy:		None
+blocks:		0
+startmonth:		None
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp45_r1i1p1_216601-217512.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp45_r1i1p1_216601-217512.nc 
+sy:		None
+blocks:		0
+startmonth:		None
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp45_r1i1p1_217601-218512.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp45_r1i1p1_217601-218512.nc 
+sy:		None
+blocks:		0
+startmonth:		None
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp45_r1i1p1_218601-219512.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp45_r1i1p1_218601-219512.nc 
+sy:		None
+blocks:		0
+startmonth:		None
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp45_r1i1p1_219601-220512.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp45_r1i1p1_219601-220512.nc 
+sy:		None
+blocks:		0
+startmonth:		None
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp45_r1i1p1_220601-221512.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp45_r1i1p1_220601-221512.nc 
+sy:		None
+blocks:		0
+startmonth:		None
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp45_r1i1p1_221601-222512.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp45_r1i1p1_221601-222512.nc 
+sy:		None
+blocks:		0
+startmonth:		None
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp45_r1i1p1_222601-223512.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp45_r1i1p1_222601-223512.nc 
+sy:		None
+blocks:		0
+startmonth:		None
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp45_r1i1p1_223601-224512.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp45_r1i1p1_223601-224512.nc 
+sy:		None
+blocks:		0
+startmonth:		None
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp45_r1i1p1_224601-225512.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp45_r1i1p1_224601-225512.nc 
+sy:		None
+blocks:		0
+startmonth:		None
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp45_r1i1p1_225601-226512.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp45_r1i1p1_225601-226512.nc 
+sy:		None
+blocks:		0
+startmonth:		None
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp45_r1i1p1_226601-227512.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp45_r1i1p1_226601-227512.nc 
+sy:		None
+blocks:		0
+startmonth:		None
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp85_r1i1p1_200601-201512.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp85_r1i1p1_200601-201512.nc 
+sy:		None
+blocks:		0
+startmonth:		649
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp85_r1i1p1_201601-202512.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp85_r1i1p1_201601-202512.nc 
+sy:		None
+blocks:		0
+startmonth:		529
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp85_r1i1p1_202601-203512.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp85_r1i1p1_202601-203512.nc 
+sy:		None
+blocks:		0
+startmonth:		409
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp85_r1i1p1_203601-204512.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp85_r1i1p1_203601-204512.nc 
+sy:		None
+blocks:		0
+startmonth:		289
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp85_r1i1p1_204601-205512.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp85_r1i1p1_204601-205512.nc 
+sy:		None
+blocks:		0
+startmonth:		169
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp85_r1i1p1_205601-206512.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp85_r1i1p1_205601-206512.nc 
+sy:		None
+blocks:		0
+startmonth:		49
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp85_r1i1p1_206601-207512.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp85_r1i1p1_206601-207512.nc 
+sy:		None
+blocks:		0
+startmonth:		None
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp85_r1i1p1_207601-208512.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp85_r1i1p1_207601-208512.nc 
+sy:		None
+blocks:		0
+startmonth:		None
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp85_r1i1p1_208601-209512.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp85_r1i1p1_208601-209512.nc 
+sy:		None
+blocks:		0
+startmonth:		None
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp85_r1i1p1_209601-210112.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_FGOALS-g2_rcp85_r1i1p1_209601-210112.nc 
+sy:		None
+blocks:		0
+startmonth:		None
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_GFDL-CM2p1_rcp45_r1i1p1_200601-201012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_GFDL-CM2p1_rcp45_r1i1p1_200601-201012.nc 
+sy:		None
+blocks:		0
+startmonth:		649
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-H-CC_rcp45_r1i1p1_200601-205012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-H-CC_rcp45_r1i1p1_200601-205012.nc 
+sy:		None
+working
+blocks:		1
+startmonth:		649
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-H-CC_rcp45_r1i1p1_205101-210012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-H-CC_rcp45_r1i1p1_205101-210012.nc 
+sy:		2060
+working
+blocks:		2
+startmonth:		109
+creating:	yes
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-H_rcp26_r1i1p1_200601-205012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-H_rcp26_r1i1p1_200601-205012.nc 
+sy:		None
+working
+blocks:		1
+startmonth:		649
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-H_rcp26_r1i1p1_205101-210012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-H_rcp26_r1i1p1_205101-210012.nc 
+sy:		2060
+working
+blocks:		2
+startmonth:		109
+creating:	yes
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-H_rcp26_r1i1p1_210101-215012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-H_rcp26_r1i1p1_210101-215012.nc 
+sy:		None
+blocks:		0
+startmonth:		None
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-H_rcp26_r1i1p1_215101-220012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-H_rcp26_r1i1p1_215101-220012.nc 
+sy:		None
+blocks:		0
+startmonth:		None
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-H_rcp26_r1i1p1_220101-225012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-H_rcp26_r1i1p1_220101-225012.nc 
+sy:		None
+blocks:		0
+startmonth:		None
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-H_rcp26_r1i1p1_225101-230012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-H_rcp26_r1i1p1_225101-230012.nc 
+sy:		None
+blocks:		0
+startmonth:		None
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-H_rcp45_r1i1p1_200601-205012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-H_rcp45_r1i1p1_200601-205012.nc 
+sy:		None
+working
+blocks:		1
+startmonth:		649
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-H_rcp45_r1i1p1_205101-210012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-H_rcp45_r1i1p1_205101-210012.nc 
+sy:		2060
+working
+blocks:		2
+startmonth:		109
+creating:	yes
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-H_rcp45_r1i1p1_210101-215012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-H_rcp45_r1i1p1_210101-215012.nc 
+sy:		None
+blocks:		0
+startmonth:		None
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-H_rcp45_r1i1p1_215101-220012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-H_rcp45_r1i1p1_215101-220012.nc 
+sy:		None
+blocks:		0
+startmonth:		None
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-H_rcp45_r1i1p1_220101-225012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-H_rcp45_r1i1p1_220101-225012.nc 
+sy:		None
+blocks:		0
+startmonth:		None
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-H_rcp45_r1i1p1_225101-230012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-H_rcp45_r1i1p1_225101-230012.nc 
+sy:		None
+blocks:		0
+startmonth:		None
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-H_rcp60_r1i1p1_200601-205012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-H_rcp60_r1i1p1_200601-205012.nc 
+sy:		None
+working
+blocks:		1
+startmonth:		649
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-H_rcp60_r1i1p1_205101-210012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-H_rcp60_r1i1p1_205101-210012.nc 
+sy:		2060
+working
+blocks:		2
+startmonth:		109
+creating:	yes
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-H_rcp85_r1i1p1_200601-205012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-H_rcp85_r1i1p1_200601-205012.nc 
+sy:		None
+working
+blocks:		1
+startmonth:		649
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-H_rcp85_r1i1p1_205101-210012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-H_rcp85_r1i1p1_205101-210012.nc 
+sy:		2060
+working
+blocks:		2
+startmonth:		109
+creating:	yes
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-H_rcp85_r1i1p1_210101-215012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-H_rcp85_r1i1p1_210101-215012.nc 
+sy:		None
+blocks:		0
+startmonth:		None
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-H_rcp85_r1i1p1_215101-220012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-H_rcp85_r1i1p1_215101-220012.nc 
+sy:		None
+blocks:		0
+startmonth:		None
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-H_rcp85_r1i1p1_220101-225012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-H_rcp85_r1i1p1_220101-225012.nc 
+sy:		None
+blocks:		0
+startmonth:		None
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-H_rcp85_r1i1p1_225101-230012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-H_rcp85_r1i1p1_225101-230012.nc 
+sy:		None
+blocks:		0
+startmonth:		None
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-R-CC_rcp45_r1i1p1_200601-202512.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-R-CC_rcp45_r1i1p1_200601-202512.nc 
+sy:		None
+blocks:		0
+startmonth:		649
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-R-CC_rcp45_r1i1p1_202601-205012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-R-CC_rcp45_r1i1p1_202601-205012.nc 
+sy:		None
+blocks:		0
+startmonth:		409
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-R-CC_rcp45_r1i1p1_205101-207512.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-R-CC_rcp45_r1i1p1_205101-207512.nc 
+sy:		None
+blocks:		0
+startmonth:		109
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-R-CC_rcp45_r1i1p1_207601-210012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-R-CC_rcp45_r1i1p1_207601-210012.nc 
+sy:		2080
+working
+blocks:		1
+startmonth:		None
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-R_rcp26_r1i1p1_200601-202512.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-R_rcp26_r1i1p1_200601-202512.nc 
+sy:		None
+blocks:		0
+startmonth:		649
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-R_rcp26_r1i1p1_202601-205012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-R_rcp26_r1i1p1_202601-205012.nc 
+sy:		None
+blocks:		0
+startmonth:		409
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-R_rcp26_r1i1p1_205101-207512.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-R_rcp26_r1i1p1_205101-207512.nc 
+sy:		None
+blocks:		0
+startmonth:		109
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-R_rcp26_r1i1p1_207601-210012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-R_rcp26_r1i1p1_207601-210012.nc 
+sy:		2080
+working
+blocks:		1
+startmonth:		None
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-R_rcp26_r1i1p1_210101-212512.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-R_rcp26_r1i1p1_210101-212512.nc 
+sy:		None
+blocks:		0
+startmonth:		None
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-R_rcp26_r1i1p1_212601-215012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-R_rcp26_r1i1p1_212601-215012.nc 
+sy:		None
+blocks:		0
+startmonth:		None
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-R_rcp26_r1i1p1_215101-217512.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-R_rcp26_r1i1p1_215101-217512.nc 
+sy:		None
+blocks:		0
+startmonth:		None
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-R_rcp26_r1i1p1_217601-220012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-R_rcp26_r1i1p1_217601-220012.nc 
+sy:		None
+blocks:		0
+startmonth:		None
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-R_rcp26_r1i1p1_220101-222512.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-R_rcp26_r1i1p1_220101-222512.nc 
+sy:		None
+blocks:		0
+startmonth:		None
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-R_rcp26_r1i1p1_222601-225012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-R_rcp26_r1i1p1_222601-225012.nc 
+sy:		None
+blocks:		0
+startmonth:		None
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-R_rcp26_r1i1p1_225101-227512.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-R_rcp26_r1i1p1_225101-227512.nc 
+sy:		None
+blocks:		0
+startmonth:		None
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-R_rcp26_r1i1p1_227601-230012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-R_rcp26_r1i1p1_227601-230012.nc 
+sy:		None
+blocks:		0
+startmonth:		None
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-R_rcp45_r1i1p1_200601-202512.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-R_rcp45_r1i1p1_200601-202512.nc 
+sy:		None
+blocks:		0
+startmonth:		649
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-R_rcp45_r1i1p1_202601-205012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-R_rcp45_r1i1p1_202601-205012.nc 
+sy:		None
+blocks:		0
+startmonth:		409
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-R_rcp45_r1i1p1_205101-207512.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-R_rcp45_r1i1p1_205101-207512.nc 
+sy:		None
+blocks:		0
+startmonth:		109
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-R_rcp45_r1i1p1_207601-210012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-R_rcp45_r1i1p1_207601-210012.nc 
+sy:		2080
+working
+blocks:		1
+startmonth:		None
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-R_rcp45_r1i1p1_210101-212512.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-R_rcp45_r1i1p1_210101-212512.nc 
+sy:		None
+blocks:		0
+startmonth:		None
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-R_rcp45_r1i1p1_212601-215012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-R_rcp45_r1i1p1_212601-215012.nc 
+sy:		None
+blocks:		0
+startmonth:		None
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-R_rcp45_r1i1p1_215101-217512.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-R_rcp45_r1i1p1_215101-217512.nc 
+sy:		None
+blocks:		0
+startmonth:		None
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-R_rcp45_r1i1p1_217601-220012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-R_rcp45_r1i1p1_217601-220012.nc 
+sy:		None
+blocks:		0
+startmonth:		None
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-R_rcp45_r1i1p1_220101-222512.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-R_rcp45_r1i1p1_220101-222512.nc 
+sy:		None
+blocks:		0
+startmonth:		None
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-R_rcp45_r1i1p1_222601-225012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-R_rcp45_r1i1p1_222601-225012.nc 
+sy:		None
+blocks:		0
+startmonth:		None
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-R_rcp45_r1i1p1_225101-227512.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-R_rcp45_r1i1p1_225101-227512.nc 
+sy:		None
+blocks:		0
+startmonth:		None
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-R_rcp45_r1i1p1_227601-230012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_GISS-E2-R_rcp45_r1i1p1_227601-230012.nc 
+sy:		None
+blocks:		0
+startmonth:		None
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_IPSL-CM5A-LR_esmrcp85_r1i1p1_200601-210012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_IPSL-CM5A-LR_esmrcp85_r1i1p1_200601-210012.nc 
+sy:		2060
+working
+blocks:		4
+startmonth:		649
+creating:	yes
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_IPSL-CM5A-LR_rcp26_r1i1p1_200601-230012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_IPSL-CM5A-LR_rcp26_r1i1p1_200601-230012.nc 
+sy:		2060
+working
+blocks:		14
+startmonth:		649
+creating:	yes
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_IPSL-CM5A-LR_rcp45_r1i1p1_200601-230012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_IPSL-CM5A-LR_rcp45_r1i1p1_200601-230012.nc 
+sy:		2060
+working
+blocks:		14
+startmonth:		649
+creating:	yes
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_IPSL-CM5A-LR_rcp60_r1i1p1_200601-210012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_IPSL-CM5A-LR_rcp60_r1i1p1_200601-210012.nc 
+sy:		2060
+working
+blocks:		4
+startmonth:		649
+creating:	yes
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_IPSL-CM5A-LR_rcp85_r1i1p1_200601-230012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_IPSL-CM5A-LR_rcp85_r1i1p1_200601-230012.nc 
+sy:		2060
+working
+blocks:		14
+startmonth:		649
+creating:	yes
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_IPSL-CM5A-MR_rcp26_r1i1p1_200601-210012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_IPSL-CM5A-MR_rcp26_r1i1p1_200601-210012.nc 
+sy:		2060
+working
+blocks:		4
+startmonth:		649
+creating:	yes
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_IPSL-CM5A-MR_rcp45_r1i1p1_200601-210012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_IPSL-CM5A-MR_rcp45_r1i1p1_200601-210012.nc 
+sy:		2060
+working
+blocks:		4
+startmonth:		649
+creating:	yes
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_IPSL-CM5A-MR_rcp45_r1i1p1_210101-230012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_IPSL-CM5A-MR_rcp45_r1i1p1_210101-230012.nc 
+sy:		None
+blocks:		0
+startmonth:		None
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_IPSL-CM5A-MR_rcp60_r1i1p1_200601-210012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_IPSL-CM5A-MR_rcp60_r1i1p1_200601-210012.nc 
+sy:		2060
+working
+blocks:		4
+startmonth:		649
+creating:	yes
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_IPSL-CM5A-MR_rcp85_r1i1p1_200601-210012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_IPSL-CM5A-MR_rcp85_r1i1p1_200601-210012.nc 
+sy:		2060
+working
+blocks:		4
+startmonth:		649
+creating:	yes
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_IPSL-CM5B-LR_rcp45_r1i1p1_200601-210012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_IPSL-CM5B-LR_rcp45_r1i1p1_200601-210012.nc 
+sy:		2060
+working
+blocks:		4
+startmonth:		649
+creating:	yes
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_IPSL-CM5B-LR_rcp85_r1i1p1_200601-210012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_IPSL-CM5B-LR_rcp85_r1i1p1_200601-210012.nc 
+sy:		2060
+working
+blocks:		4
+startmonth:		649
+creating:	yes
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_MIROC-ESM-CHEM_rcp26_r1i1p1_200601-210012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_MIROC-ESM-CHEM_rcp26_r1i1p1_200601-210012.nc 
+sy:		2060
+working
+blocks:		4
+startmonth:		649
+creating:	yes
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_MIROC-ESM-CHEM_rcp45_r1i1p1_200601-210012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_MIROC-ESM-CHEM_rcp45_r1i1p1_200601-210012.nc 
+sy:		2060
+working
+blocks:		4
+startmonth:		649
+creating:	yes
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_MIROC-ESM-CHEM_rcp60_r1i1p1_200601-210012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_MIROC-ESM-CHEM_rcp60_r1i1p1_200601-210012.nc 
+sy:		2060
+working
+blocks:		4
+startmonth:		649
+creating:	yes
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_MIROC-ESM-CHEM_rcp85_r1i1p1_200601-210012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_MIROC-ESM-CHEM_rcp85_r1i1p1_200601-210012.nc 
+sy:		2060
+working
+blocks:		4
+startmonth:		649
+creating:	yes
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_MIROC-ESM_esmrcp85_r1i1p1_200601-210012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_MIROC-ESM_esmrcp85_r1i1p1_200601-210012.nc 
+sy:		2060
+working
+blocks:		4
+startmonth:		649
+creating:	yes
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_MIROC-ESM_rcp26_r1i1p1_200601-210012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_MIROC-ESM_rcp26_r1i1p1_200601-210012.nc 
+sy:		2060
+working
+blocks:		4
+startmonth:		649
+creating:	yes
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_MIROC-ESM_rcp45_r1i1p1_200601-210012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_MIROC-ESM_rcp45_r1i1p1_200601-210012.nc 
+sy:		2060
+working
+blocks:		4
+startmonth:		649
+creating:	yes
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_MIROC-ESM_rcp45_r1i1p1_210101-230012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_MIROC-ESM_rcp45_r1i1p1_210101-230012.nc 
+sy:		None
+blocks:		0
+startmonth:		None
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_MIROC-ESM_rcp60_r1i1p1_200601-210012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_MIROC-ESM_rcp60_r1i1p1_200601-210012.nc 
+sy:		2060
+working
+blocks:		4
+startmonth:		649
+creating:	yes
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_MIROC-ESM_rcp85_r1i1p1_200601-210012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_MIROC-ESM_rcp85_r1i1p1_200601-210012.nc 
+sy:		2060
+working
+blocks:		4
+startmonth:		649
+creating:	yes
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_MIROC4h_rcp45_r1i1p1_200601-201512.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_MIROC4h_rcp45_r1i1p1_200601-201512.nc 
+sy:		None
+blocks:		0
+startmonth:		649
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_MIROC4h_rcp45_r1i1p1_201601-202512.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_MIROC4h_rcp45_r1i1p1_201601-202512.nc 
+sy:		None
+blocks:		0
+startmonth:		529
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_MIROC4h_rcp45_r1i1p1_202601-203512.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_MIROC4h_rcp45_r1i1p1_202601-203512.nc 
+sy:		None
+blocks:		0
+startmonth:		409
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_MIROC5_rcp26_r1i1p1_200601-210012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_MIROC5_rcp26_r1i1p1_200601-210012.nc 
+sy:		2060
+working
+blocks:		4
+startmonth:		649
+creating:	yes
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_MIROC5_rcp45_r1i1p1_200601-210012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_MIROC5_rcp45_r1i1p1_200601-210012.nc 
+sy:		2060
+working
+blocks:		4
+startmonth:		649
+creating:	yes
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_MIROC5_rcp60_r1i1p1_200601-210012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_MIROC5_rcp60_r1i1p1_200601-210012.nc 
+sy:		2060
+working
+blocks:		4
+startmonth:		649
+creating:	yes
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_MIROC5_rcp85_r1i1p1_200601-210012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_MIROC5_rcp85_r1i1p1_200601-210012.nc 
+sy:		2060
+working
+blocks:		4
+startmonth:		649
+creating:	yes
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_MPI-ESM-LR_esmrcp85_r1i1p1_200601-210012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_MPI-ESM-LR_esmrcp85_r1i1p1_200601-210012.nc 
+sy:		2060
+working
+blocks:		4
+startmonth:		649
+creating:	yes
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_MRI-CGCM3_rcp26_r1i1p1_200601-210012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_MRI-CGCM3_rcp26_r1i1p1_200601-210012.nc 
+sy:		2060
+working
+blocks:		4
+startmonth:		649
+creating:	yes
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_MRI-CGCM3_rcp45_r1i1p1_200601-210012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_MRI-CGCM3_rcp45_r1i1p1_200601-210012.nc 
+sy:		2060
+working
+blocks:		4
+startmonth:		649
+creating:	yes
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_MRI-CGCM3_rcp60_r1i1p1_200601-210012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_MRI-CGCM3_rcp60_r1i1p1_200601-210012.nc 
+sy:		2060
+working
+blocks:		4
+startmonth:		649
+creating:	yes
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_MRI-CGCM3_rcp85_r1i1p1_200601-210012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_MRI-CGCM3_rcp85_r1i1p1_200601-210012.nc 
+sy:		2060
+working
+blocks:		4
+startmonth:		649
+creating:	yes
+
+===================================
+F:\climate\monthlypr\v2test\pr_Amon_MRI-ESM1_esmrcp85_r1i1p1_200601-210012.nc
+new out F:\climate\monthlypr\v2test\pr_Amon_MRI-ESM1_esmrcp85_r1i1p1_200601-210012.nc 
+sy:		2060
+working
+blocks:		4
+startmonth:		649
+creating:	yes

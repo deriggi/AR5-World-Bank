@@ -44,13 +44,13 @@ class NCFile:
 		return self.endyear - self.startyear
 
 	def isProcessible(self):
-		return self.getYearDifference() >20 and self.startyear >= 2000 and self.getYearDifference >= 20;
+		return self.getYearDifference >= 19 and self.startyear >= 2000;
 
 	def findBestStartYear(self, gt=0):
 		startyears = [2020, 2040, 2060, 2080]
 		for sy in startyears:
 			diff = sy - self.startyear 
-			if  sy >gt and diff > 0 and diff < 20 and (diff + sy) <= self.endyear:
+			if  sy >gt and diff > 0  and ( sy + 20) <= self.endyear:
 				return sy
 		return None
 
@@ -125,11 +125,11 @@ def createYearBandSuffix(startYear, numMonths):
 
 
 
-def parsenc():
+def parsenc(year):
 	root = 'F:\\climate\\monthlypr\\v2test\\';
 	childfiles = os.listdir(root)
-	outTiffPath = 'C:\\Users\\Johnny\\Documents\\climatev2\\outgeotiff_20'
-	year = 2020
+	outTiffPath = 'C:\\Users\\Johnny\\Documents\\climatev2\\outgeotiff_{0}'.format(year - 2000)
+	
 	numMonths = 12*20
 	newsuffix = createYearBandSuffix(year,numMonths)
 
@@ -137,22 +137,25 @@ def parsenc():
 		sd  = parsepath(root + ncfile)
 		if sd != None:
 			sd.createGeotiffFolder(outTiffPath)
-
+			print
+			print '==================================='
 			print "{0}".format(root + ncfile)
 			if sd.isProcessible():
+				nextBestStartYear = sd.findBestStartYear(year-1)
 				sd.replaceYearSuffix(newsuffix)
 				# sd.createAsGeotiff()
 				print 'new out {0} '.format(sd.filename)
-				print "sy:\t\t{0}".format(sd.findBestStartYear())
+				print "sy:\t\t{0}".format(nextBestStartYear)
 				print "blocks:\t\t{0}".format(sd.getNumberOfBlocks())
 				print "startmonth:\t\t{0}".format(sd.calculateStartMonth(year))
 
 				calculatedStartMonth = sd.calculateStartMonth(year) 
-				if calculatedStartMonth != None:
+				if calculatedStartMonth != None and nextBestStartYear !=None and int(nextBestStartYear) == year:
+					print 'creating:\tyes';
 					bandinfo = sd.createBandSwtich(int(calculatedStartMonth),20*12)
 					sd.createAsGeotiff(bandinfo)
 
-parsenc()
+parsenc(year = 2060)
 
 
 				
