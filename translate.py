@@ -126,9 +126,9 @@ def createYearBandSuffix(startYear, numMonths):
 
 
 def parsenc(year):
-	root = 'F:\\climate\\monthlypr\\v2test\\';
+	root = 'F:\\climate\\monthlytas\\v3\\';
 	childfiles = os.listdir(root)
-	outTiffPath = 'C:\\Users\\Johnny\\Documents\\climatev2\\outgeotiff_{0}'.format(year - 2000)
+	outTiffPath = 'C:\\Users\\Johnny\\Documents\\climatev2\\tas\\outgeotiff_{0}'.format(year - 2000)
 	
 	numMonths = 12*20
 	newsuffix = createYearBandSuffix(year,numMonths)
@@ -155,7 +155,10 @@ def parsenc(year):
 					bandinfo = sd.createBandSwtich(int(calculatedStartMonth),20*12)
 					sd.createAsGeotiff(bandinfo)
 
+parsenc(year = 2020)
+parsenc(year = 2040)
 parsenc(year = 2060)
+parsenc(year = 2080)
 
 
 				

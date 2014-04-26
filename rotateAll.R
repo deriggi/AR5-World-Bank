@@ -1,6 +1,6 @@
 library(raster)
-rootDir <- "C:/Users/Johnny/Documents/climatev2/outgeotiff_40/"
-output_folder <- "C:/Users/Johnny/Documents/climatev2/outgeotiff_40_rotated"
+rootDir <- "C:/Users/Johnny/Documents/climatev2/tasmax/outgeotiff_20/"
+output_folder <- "C:/Users/Johnny/Documents/climatev2/tasmax/outgeotiff_20_rotated"
 
 path_length <- nchar(rootDir)
 allFiles <- list.files(rootDir, full.names=TRUE, pattern="\\.tif$")
