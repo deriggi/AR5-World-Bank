@@ -32,8 +32,12 @@ def createAsASCII( inpath, band, outfolder ):
 		command = "{0} {1} {2}{3}{4}".format(firstpart, inpath , outfolder, path[path.rfind('/')+1 : path.rfind('.tif')],'.asc');
 		print command
 
-# toAscii('D:/climate/monthly/pr/outgeotiff_20_rotated/')
-toRegrid("D:/climate/monthly/pr/outgeotiff_20_rotated_backup/", "D:/climate/monthly/pr/outgeotiff_20_rotated_backup_regrid/")
 
+def regridBatch(year):
+	toRegrid("D:/climate/monthly/pr/outgeotiff_{0}_rotated/".format(year) , "D:/climate/monthly/pr/outgeotiff_{0}_rotated_regrided/".format(year) )
+	
+regridBatch(20)
+# gdalwarp -of GTiff -cutline C:/Users/Johnny/Documents/climatev2/shapefiles/BGD_adm/BGD_adm0.shp -crop_to_cutline D:\climate\monthly\pr\outgeotiff_20_rotated_backup\pr_Amon_MRI-CGCM3_rcp85_r1i1p1_202001-203912_reproj.tif  D:\climate\monthly\pr\outgeotiff_20_rotated_backup\pr_Amon_MRI-CGCM3_rcp85_r1i1p1_202001-203912_bangladesh.tif
+# toAscii('D:/climate/monthly/pr/outgeotiff_20_rotated/')
 # gdal_translate -of AAIGrid -b 1 D:/climate/monthly/pr/outgeotiff_20_rotated/pr_Amon_MRI-ESM1_esmrcp85_r1i1p1_202001-203912.tif D:/climate/monthly/pr/outgeotiff_20_rotated/pr_Amon_MRI-ESM1_esmrcp85_r1i1p1_202001-203912.asc
 
