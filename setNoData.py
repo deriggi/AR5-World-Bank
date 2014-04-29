@@ -44,14 +44,19 @@ def createOutputDirectory(outPath):
 
 
 
-cvars = ['pr']
+cvars = ['tas']
 years = [20, 40, 60, 80]
-folder = ['rotated', 'rotated_reproj', 'rotated_reprojected_regridded']
+folder = ['rotated', 'rotated_reproj']
+# folder = ['rotated', 'rotated_reproj', 'rotated_reprojected_regridded']
 
 for cv in cvars:
 	for y in years:
 		for f in folder:
 			translateFiles("D:\\climate\\monthly\\{0}\\outgeotiff_{1}_{2}".format(cv, y, f))
+
+# run tas
+# careful with rest that have NorESM
+# no need to run rotated_reproj_regridd on those that dont have it yet, like the tas groups
 
 # tasmodels = []
 # tasmodels.append(['MPI-ESM',float(1e+020)])
