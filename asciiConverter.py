@@ -33,6 +33,12 @@ def getOnlyTiffs(alist):
 			newlist.append(child)
 	return newlist
 
+def isTiff(child):
+	suffix = '.tif'
+	if child.rfind(suffix) == len(child)-4:
+		return True;
+	return False
+
 def returnOdds(alist):
 	newlist = []
 	sorted(alist, key=str.lower)
@@ -62,26 +68,53 @@ def createOutputDirectory(outPath):
 		os.makedirs(outPath)
 		
 def createAsASCII( inpath, band, outfolder ):
-		firstpart = 'gdal_translate -of AAIGrid -b '
-		firstpart  = firstpart + str(band)
-		command = "{0} {1} {2}{3}{4}".format(firstpart, inpath , outfolder, path[path.rfind('/')+1 : path.rfind('.tif')],'.asc');
-		print command
+	firstpart = 'gdal_translate --config GDAL_CACHEMAX 500 -of AAIGrid -b '
+	firstpart  = firstpart + str(band)
+	command = "{0} {1} {2}{3}_band-{4}{5}".format(firstpart, inpath , outfolder, inpath[inpath.rfind('\\')+1 : inpath.rfind('.tif')],band,'.asc');
+	print command
+	os.system(command)
+	print
 
+def regridBatch(year, val, choice='all'):
+	toRegrid("D:/climate/monthly/{0}/outgeotiff_{1}_rotated_reproj/".format(val, year) , "D:/climate/monthly/{0}/outgeotiff_{1}_rotated_reprojected_regridded/".format(val,year) ,choice)
 
-def regridBatch(year, choice='all'):
-	toRegrid("D:/climate/monthly/pr/outgeotiff_{0}_rotated_reproj/".format(year) , "D:/climate/monthly/pr/outgeotiff_{0}_rotated_reprojected_regridded/".format(year) ,choice)
+def regridLoop():	
+	cvars = ['tas', 'tasmin', 'tasmax' ]
+	years = [20, 40, 60, 80]
+	for cv in cvars:
+		for y in years:
+			regridBatch(y, cv, 'all')
+
+def asciibatch(var, year, intemplate, outemplate):
+	inpath = intemplate.format(var,year)
+	outpath = outemplate.format(var,year)
+	createOutputDirectory(outpath)
+	childfiles = os.listdir(inpath)
 	
-regridBatch(40, 'all')
-regridBatch(60, 'all')
-regridBatch(80, 'all')
+	for c in childfiles:
+		if isTiff(c):
+			for i in xrange(1,241):
+				createAsASCII(inpath + c, i, outpath);
+
+def clipLoop():	
+	cvars = ['pr', 'tas', 'tasmin', 'tasmax' ]
+	years = [20, 40, 60, 80]
+	for cv in cvars:
+		for y in years:
+			asciibatch(cv,y,'F:\\climate\\monthly\\{0}\\bangladesh\\outgeotiff_{1}\\'.format(cv,y),'F:\\climate\\monthly\\{0}\\bangladesh\\outasc_{1}\\'.format(cv,y) );
+
+clipLoop();
+	
+
+
+# gdal_translate -of AAIGrid -b 240 D:\\climate\\monthly\\pr\\outgeotiff_20_rotated_reprojected_regridded_nd\\pr_Amon_bcc-csm1-1_rcp26_r1i1p1_202001-203912.tif F:\climate\monthly\pr\outgeotiff_20_rotated_reprojected_regridded_nd\pr_Amon_bcc-csm1-1_rcp26_r1i1p1_202001-203912.tif
 
 # not pr_Amon_bcc-csm1-1-m_rcp45_r1i1p1_204001-205912.tif
 
-# reproject pr20batch when regrid done
-# regrid rest all pr
+
 # regrid tasmin, tasmax, tas 
 
-# run process to regrid 40 and 60 concurrently
+# setnodata
 
 
 # gdalwarp -of GTiff -cutline C:/Users/Johnny/Documents/climatev2/shapefiles/BGD_adm/BGD_adm0.shp -crop_to_cutline D:\climate\monthly\pr\outgeotiff_20_rotated_backup\pr_Amon_MRI-CGCM3_rcp85_r1i1p1_202001-203912_reproj.tif  D:\climate\monthly\pr\outgeotiff_20_rotated_backup\pr_Amon_MRI-CGCM3_rcp85_r1i1p1_202001-203912_bangladesh.tif
@@ -89,5 +122,5 @@ regridBatch(80, 'all')
 # gdal_translate -of AAIGrid -b 1 D:/climate/monthly/pr/outgeotiff_20_rotated/pr_Amon_MRI-ESM1_esmrcp85_r1i1p1_202001-203912.tif D:/climate/monthly/pr/outgeotiff_20_rotated/pr_Amon_MRI-ESM1_esmrcp85_r1i1p1_202001-203912.asc
 
 
-# gdalwarp -of GTiff -cutline C:/Users/Johnny/Documents/climatev2/shapefiles/BGD_adm/BGD_adm0.shp -crop_to_cutline -dstnodata -9999 D:\climate\monthly\pr\outgeotiff_80_rotated_reproj\pr_Amon_bcc-csm1-1-m_rcp26_r1i1p1_208001-209912.tif  D:\climate\monthly\pr\outgeotiff_80_rotated_reproj\pr_Amon_bcc-csm1-1-m_rcp26_r1i1p1_208001-209912_bangladesh_nd.tif
+# gdalwarp -of GTiff -cutline C:/Users/Johnny/Documents/climatev2/shapefiles/BGD_adm/BGD_adm0.shp -crop_to_cutline -dstnodata 1e+020 D:\climate\monthly\pr\outgeotiff_80_rotated_reproj\pr_Amon_bcc-csm1-1-m_rcp26_r1i1p1_208001-209912.tif  D:\climate\monthly\pr\outgeotiff_80_rotated_reproj\pr_Amon_bcc-csm1-1-m_rcp26_r1i1p1_208001-209912_bangladesh_nd.tif
 

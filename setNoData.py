@@ -32,7 +32,10 @@ def translateFiles(dirpath):
 			print c
 			original = dirpath + '\\' + c
 			newfile = newfolder  + c
-			command = 'gdal_translate --config GDAL_CACHEMAX 500 -stats -a_nodata 1.0e+020 {0} {1}'.format(original, newfile)
+			nodataval = float(1.0e+20)
+			if c.rfind('NorESM1-M') != -1:
+				nodataval = float(9.969209968386869e+036)
+			command = 'gdal_translate --config GDAL_CACHEMAX 500 -stats -a_nodata {0} {1} {2}'.format(nodataval, original, newfile)
 			print command
 			os.system(command)
 		
@@ -44,17 +47,16 @@ def createOutputDirectory(outPath):
 
 
 
-cvars = ['tas']
-years = [20, 40, 60, 80]
-folder = ['rotated', 'rotated_reproj']
-# folder = ['rotated', 'rotated_reproj', 'rotated_reprojected_regridded']
+cvars = ['tasmax']
+years = [80]
+folder = ['rotated_reprojected_regridded']
 
 for cv in cvars:
 	for y in years:
 		for f in folder:
 			translateFiles("D:\\climate\\monthly\\{0}\\outgeotiff_{1}_{2}".format(cv, y, f))
 
-# run tas
+# still need to finish tas and last one ontasmax
 # careful with rest that have NorESM
 # no need to run rotated_reproj_regridd on those that dont have it yet, like the tas groups
 
