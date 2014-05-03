@@ -105,7 +105,7 @@ def clipLoop():
 
 clipLoop();
 	
-
+# for bangladesh, pr and tas are ready
 
 # gdal_translate -of AAIGrid -b 240 D:\\climate\\monthly\\pr\\outgeotiff_20_rotated_reprojected_regridded_nd\\pr_Amon_bcc-csm1-1_rcp26_r1i1p1_202001-203912.tif F:\climate\monthly\pr\outgeotiff_20_rotated_reprojected_regridded_nd\pr_Amon_bcc-csm1-1_rcp26_r1i1p1_202001-203912.tif
 
