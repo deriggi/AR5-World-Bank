@@ -1,33 +1,45 @@
 tenthpercentile <- function(x, na.rm=TRUE){ return (quantile(x, c(0.10), na.rm=na.rm));}
-fiftiethpercentile <- function(x, na.rm=TRUE){ return (quantile(x, c(0.10), na.rm=na.rm));}
-ninetiethpercentile <- function(x, na.rm=TRUE){ return (quantile(x, c(0.10), na.rm=na.rm));}
+fiftiethpercentile <- function(x, na.rm=TRUE){ return (quantile(x, c(0.50), na.rm=na.rm));}
+ninetiethpercentile <- function(x, na.rm=TRUE){ return (quantile(x, c(0.90), na.rm=na.rm));}
 
 library(raster)
-rootDir <- "D:/climate/monthly/pr/outgeotiff_20_rotated_reprojected_regridded_nd/"
-output_folder <- "F:/climate/monthly/pr/ensemble_10th/"
+
 
 rcps <- c('rcp26', 'rcp45', 'rcp60', 'rcp85')
 months <- c(1:12)
-
-for (rcp in rcps){
+startyears <- c(20,40,60,80)
+write('starting',stdout())
+for (sy in startyears){
 	
-	for (month in months){
+	write(paste('year:', sy), stdout())
+
+	rootDir <- paste("D:/climate/monthly/pr/outgeotiff_",sy,"_rotated_reprojected_regridded_nd/",sep="")
+	output_folder <- "F:/climate/monthly/pr/ensemble_10th/"
+
+	for (rcp in rcps){
 		
-		allFiles <- list.files(rootDir, full.names=TRUE, pattern=paste(".*",rcp,".*\\.tif$", sep=""))
-		myStack <- stack()
-		template_raster <- raster(allFiles[1], bands=1)
-		
-		for (x in allFiles){
-			resampled_x <- resample(raster(x, bands=month), template_raster, method='bilinear')
-			myStack <- addLayer(myStack,resampled_x)
-			write(nlayers(myStack), stdout())
+		write(paste('rcp', rcp), stdout())
+
+		for (month in months){
+			
+			write(paste('month', month), stdout())
+
+			allFiles <- list.files(rootDir, full.names=TRUE, pattern=paste(".*",rcp,".*\\.tif$", sep=""))
+			myStack <- stack()
+			template_raster <- raster(allFiles[1], bands=1)
+			
+			for (x in allFiles){
+				resampled_x <- resample(raster(x, bands=month), template_raster, method='bilinear')
+				myStack <- addLayer(myStack,resampled_x)
+				write(nlayers(myStack), stdout())
+			}
+
+			stackApply(myStack, c(1), fun=tenthpercentile, filename=paste(output_folder,paste(rcp,sy,month,'.tif',sep='_'), sep=''))
+
 		}
+
 		
-		stackApply(myStack, c(1), fun=tenthpercentile, filename=paste(output_folder,paste(rcp,month,'.tif',sep='_'), sep=''))
-
 	}
-
-	
 }
 
 # run this for each decadal start thing
