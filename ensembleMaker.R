@@ -4,7 +4,7 @@ ninetiethpercentile <- function(x, na.rm=TRUE){ return (quantile(x, c(0.90), na.
 
 library(raster)
 
-
+# cvars <- ('pr', 'tas', 'tasmin', 'tasmax')
 rcps <- c('rcp26', 'rcp45', 'rcp60', 'rcp85')
 months <- c(1:12)
 startyears <- c(20,40,60,80)
@@ -14,7 +14,7 @@ for (sy in startyears){
 	write(paste('year:', sy), stdout())
 
 	rootDir <- paste("D:/climate/monthly/pr/outgeotiff_",sy,"_rotated_reprojected_regridded_nd/",sep="")
-	output_folder <- "F:/climate/monthly/pr/ensemble_10th/"
+	output_folder <- "F:/climate/monthly/pr/ensemble_50th/"
 
 	for (rcp in rcps){
 		
@@ -31,10 +31,10 @@ for (sy in startyears){
 			for (x in allFiles){
 				resampled_x <- resample(raster(x, bands=month), template_raster, method='bilinear')
 				myStack <- addLayer(myStack,resampled_x)
-				write(nlayers(myStack), stdout())
+				# write(nlayers(myStack), stdout())
 			}
 
-			stackApply(myStack, c(1), fun=tenthpercentile, filename=paste(output_folder,paste(rcp,sy,month,'.tif',sep='_'), sep=''))
+			stackApply(myStack, c(1), fun=fiftiethpercentile, filename=paste(output_folder,paste(rcp,sy,month,'.tif',sep='_'), sep=''))
 
 		}
 
@@ -42,7 +42,8 @@ for (sy in startyears){
 	}
 }
 
-# run this for each decadal start thing
+
+# rename each file so it has full path
 
 
 # lapply(allFiles, function(x){
