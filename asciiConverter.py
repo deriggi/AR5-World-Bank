@@ -96,14 +96,14 @@ def asciibatch(var, year, intemplate, outemplate):
 			for i in xrange(1,241):
 				createAsASCII(inpath + c, i, outpath);
 
-def clipLoop():	
+def asciiBatchLoop():	
 	cvars = ['pr', 'tas', 'tasmin', 'tasmax' ]
 	years = [20, 40, 60, 80]
 	for cv in cvars:
 		for y in years:
 			asciibatch(cv,y,'F:\\climate\\monthly\\{0}\\bangladesh\\outgeotiff_{1}\\'.format(cv,y),'F:\\climate\\monthly\\{0}\\bangladesh\\outasc_{1}\\'.format(cv,y) );
 
-clipLoop();
+asciiBatchLoop();
 	
 # for bangladesh, pr and tas are ready
 
