@@ -1,8 +1,8 @@
-## Bangladesh Data Sample
+## Bangladesh Data 
 ![Alt text](images/bangladeshsidebyside.png)
 
-Precipitation data for the 2080-2099 time period
+pr, tas, tasmax and tasmin for the 2020, 2040, 2060, and 2080 time periods
 
-Clipped rasters: [Bangladesh_pr_2080-2099](https://drive.google.com/file/d/0B1_qZwH-TEzpbjNQOUlpREdDRVU/edit?usp=sharing)
+Clipped rasters: [All Bangladesh Data](https://drive.google.com/folderview?id=0B1_qZwH-TEzpZEZkR2pMVWltWUU&usp=sharing)
 
 
