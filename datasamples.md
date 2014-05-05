@@ -1,5 +1,5 @@
 ## Bangladesh Data 
-![Alt text](images/bangladeshsidebyside.png)
+![Alt text](images/bangladesh_coverage_mm.png)
 
 pr, tas, tasmax and tasmin for the 2020, 2040, 2060, and 2080 time periods
 
