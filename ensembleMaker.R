@@ -5,43 +5,49 @@ ninetiethpercentile <- function(x, na.rm=TRUE){ return (quantile(x, c(0.90), na.
 library(raster)
 
 # cvars <- ('pr', 'tas', 'tasmin', 'tasmax')
+percentilefunctions <-  c(tenthpercentile, fiftiethpercentile, ninetiethpercentile)
+outnames <- c('ensemble_10th/', 'ensemble_50th/', 'ensemble_90th/')
 rcps <- c('rcp26', 'rcp45', 'rcp60', 'rcp85')
 months <- c(1:12)
 startyears <- c(20,40,60,80)
 write('starting',stdout())
-for (sy in startyears){
-	
-	write(paste('year:', sy), stdout())
 
-	rootDir <- paste("D:/climate/monthly/pr/outgeotiff_",sy,"_rotated_reprojected_regridded_nd/",sep="")
-	output_folder <- "F:/climate/monthly/pr/ensemble_50th/"
-
-	for (rcp in rcps){
+pindex <- 0
+for (pfunc in percentilefunctions){
+	pindex <- pindex + 1
+	for (sy in startyears){
 		
-		write(paste('rcp', rcp), stdout())
+		write(paste('year:', sy), stdout())
 
-		for (month in months){
-			
-			write(paste('month', month), stdout())
+		rootDir <- paste("D:/climate/monthly/pr/outgeotiff_",sy,"_rotated_reprojected_regridded_nd/",sep="")
+		output_folder <- paste("F:/climate/monthly/pr/",outnames[pindex], sep='')
 
-			allFiles <- list.files(rootDir, full.names=TRUE, pattern=paste(".*",rcp,".*\\.tif$", sep=""))
-			myStack <- stack()
-			template_raster <- raster(allFiles[1], bands=1)
+		for (rcp in rcps){
 			
-			for (x in allFiles){
-				resampled_x <- resample(raster(x, bands=month), template_raster, method='bilinear')
-				myStack <- addLayer(myStack,resampled_x)
-				# write(nlayers(myStack), stdout())
+			write(paste('rcp', rcp), stdout())
+
+			for (month in months){
+				
+				write(paste('month', month), stdout())
+
+				allFiles <- list.files(rootDir, full.names=TRUE, pattern=paste(".*",rcp,".*\\.tif$", sep=""))
+				myStack <- stack()
+				template_raster <- raster(allFiles[1], band=1)
+				
+				for (x in allFiles){
+					resampled_x <- resample(raster(x, band=month), template_raster, method='bilinear')
+					myStack <- addLayer(myStack,resampled_x)
+					# write(nlayers(myStack), stdout())
+				}
+
+				stackApply(myStack, c(1), fun=pfunc, filename=paste(output_folder,paste(rcp,sy,month,'.tif',sep='_'), sep=''))
+
 			}
 
-			stackApply(myStack, c(1), fun=fiftiethpercentile, filename=paste(output_folder,paste(rcp,sy,month,'.tif',sep='_'), sep=''))
-
+			
 		}
-
-		
 	}
 }
-
 
 # rename each file so it has full path
 
