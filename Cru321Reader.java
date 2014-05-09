@@ -70,10 +70,7 @@ public class Cru321Reader {
             int rowsWritten  = 0;
             for (int i = lineContainer.size() - 1; i >= 0; i--) {
                 fw.write(lineContainer.get(i));
-                if(i>0){
-                    
-                    
-                }
+              
                 fw.write(LINE_SEPARATOR);
                 rowsWritten++;
             }
