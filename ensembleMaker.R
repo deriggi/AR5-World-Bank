@@ -7,9 +7,10 @@ library(raster)
 # cvars <- ('pr', 'tas', 'tasmin', 'tasmax')
 percentilefunctions <-  c(tenthpercentile, fiftiethpercentile, ninetiethpercentile)
 outnames <- c('ensemble_10th/', 'ensemble_50th/', 'ensemble_90th/')
-rcps <- c('rcp26', 'rcp45', 'rcp60', 'rcp85')
-months <- c(1:12)
-startyears <- c(20,40,60,80)
+# rcps <- c('rcp26', 'rcp45', 'rcp60', 'rcp85')
+rcps <- c('rcp45', 'rcp60', 'rcp85')
+months <- c(1:240)
+startyears <- c(2020,2040,2060,2080)
 write('starting',stdout())
 
 pindex <- 0
@@ -19,20 +20,19 @@ for (pfunc in percentilefunctions){
 		
 		write(paste('year:', sy), stdout())
 
-		rootDir <- paste("D:/climate/monthly/pr/outgeotiff_",sy,"_rotated_reprojected_regridded_nd/",sep="")
+		rootDir <- paste("D:/climate/monthly/pr/outgeotiff_",sy-2000,"_rotated_reprojected_regridded_nd/",sep="")
 		output_folder <- paste("F:/climate/monthly/pr/",outnames[pindex], sep='')
 
 		for (rcp in rcps){
 			
+			allFiles <- list.files(rootDir, full.names=TRUE, pattern=paste(".*",rcp,".*\\.tif$", sep=""))
+			template_raster <- raster(allFiles[1], band=1)
 			write(paste('rcp', rcp), stdout())
 
 			for (month in months){
 				
 				write(paste('month', month), stdout())
-
-				allFiles <- list.files(rootDir, full.names=TRUE, pattern=paste(".*",rcp,".*\\.tif$", sep=""))
 				myStack <- stack()
-				template_raster <- raster(allFiles[1], band=1)
 				
 				for (x in allFiles){
 					resampled_x <- resample(raster(x, band=month), template_raster, method='bilinear')
