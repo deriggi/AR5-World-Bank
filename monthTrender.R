@@ -2,7 +2,6 @@ library(raster)
 
 years <- c(20,40,60,80)
 for (year in years){
-	year <- 20
 	rootDir <- paste("D:/climate/monthly/pr/outgeotiff_", year , "_rotated_reprojected_regridded_nd/",sep="")
 	write(rootDir, stdout())
 	output_folder <- paste("F:/climate/monthly/pr/monthtrend_", year ,  '/', sep="")
