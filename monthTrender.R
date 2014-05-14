@@ -1,10 +1,10 @@
 library(raster)
-
+cvar <- 'tasmin' # tasmin tasmax pr
 years <- c(20,40,60,80)
 for (year in years){
-	rootDir <- paste("D:/climate/monthly/pr/outgeotiff_", year , "_rotated_reprojected_regridded_nd/",sep="")
+	rootDir <- paste("D:/climate/monthly/",cvar,"/outgeotiff_", year , "_rotated_reprojected_regridded_nd/",sep="")
 	write(rootDir, stdout())
-	output_folder <- paste("F:/climate/monthly/pr/monthtrend_", year ,  '/', sep="")
+	output_folder <- paste("F:/climate/monthly/",cvar,"/monthtrend_", year ,  '/', sep="")
 	path_length <- nchar(rootDir)
 	allFiles <- list.files(rootDir, full.names=TRUE, pattern="\\.tif$")
 
