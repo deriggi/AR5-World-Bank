@@ -1,5 +1,5 @@
 library(raster)
-cvar <- 'tasmin' # tasmin tasmax pr
+cvar <- 'tasmax'
 years <- c(20,40,60,80)
 for (year in years){
 	rootDir <- paste("D:/climate/monthly/",cvar,"/outgeotiff_", year , "_rotated_reprojected_regridded_nd/",sep="")
