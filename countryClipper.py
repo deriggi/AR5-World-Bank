@@ -55,6 +55,7 @@ def getExcludes():
 	excludes = excludes + ['CXR','CYM','DMA','GIB','GRD','IOT','KNA', 'LCA','LIE','MAC','MCO','MNP','MSR','MYT','NRU','PLW','SGP']
 	excludes = excludes + ['SHN','SMR','TKL','VCT','VGB','VIR']
 	return excludes;
+
 def clipBatchBaseData(var, year, countrycode):
 
 	clipToShapefile( 'F:/climate/monthly/{0}/monthtrendstacked_{1}/'.format(var, year), 'C:/Users/Johnny/BoundaryData/wbshapes2010/World_Polys_Low.shp',"F:/climate/monthly/{0}/countries/{2}/monthtrendstacked_{1}_/".format(var,year, countrycode) , countrycode)
@@ -79,7 +80,7 @@ def clipLoopBaseData():
 def clipLoopEnsemble():	
 
 	excludes  = getExcludes()
-	countrycodes = ['TLS']
+	countrycodes = getIsoCodes()
 	
 	cvars = ['pr', 'tas', 'tasmin', 'tasmax']
 	years = [ 10, 50, 90 ]
