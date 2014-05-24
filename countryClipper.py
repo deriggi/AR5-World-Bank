@@ -62,7 +62,7 @@ def clipBatchBaseData(var, year, countrycode):
 
 def clipBatchEnsembleData(var, year, countrycode):
 
-	clipToShapefile( 'F:/climate/monthly/{0}/ensemble_{1}th/'.format(var, year), 'C:/Users/Johnny/BoundaryData/wbshapes2010/World_Polys_Low.shp',"F:/climate/monthly/{0}/countries/{2}/ensemble_{1}_/".format(var,year, countrycode) , countrycode)
+	clipToShapefile( 'F:/climate/monthly/{0}/ensemblestacked_{1}/'.format(var, year), 'C:/Users/Johnny/BoundaryData/wbshapes2010/World_Polys_Low.shp',"F:/climate/monthly/{0}/countries/{2}/ensemblestacked_{1}_/".format(var,year, countrycode) , countrycode)
 
 def clipLoopBaseData():	
 
