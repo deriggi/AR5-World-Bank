@@ -1,0 +1,14 @@
+bcc-csm1-1-m
+bcc-csm1-1
+bnu-esm
+canesm2
+cnrm-cm5
+csiro-mk3-6-0
+ipsl-cm5a-lr
+ipsl-cm5a-mr
+ipsl-cm5b-lr
+miroc-esm-chem
+miroc-esm
+miroc5
+mri-cgcm3
+mri-esm1

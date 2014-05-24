@@ -20,8 +20,8 @@ for (pfunc in percentilefunctions){
 		write(paste('year:', sy), stdout())
 
 		# F:\climate\monthly\pr\monthtrendstacked_20
-		rootDir <- paste("F:/climate/monthly/pr/monthtrendstacked_",sy-2000,"/",sep="")
-		output_folder <- paste("F:/climate/monthly/pr/",outnames[pindex], sep="")
+		rootDir <- paste("F:/climate/monthly/tasmax/monthtrendstacked_",sy-2000,"/",sep="")
+		output_folder <- paste("F:/climate/monthly/tasmax/",outnames[pindex], sep="")
 		dir.create(output_folder)
 
 		for (rcp in rcps){

@@ -5,7 +5,7 @@ def clipraster(rasterpath, shapepath, outpath):
 
 	# shape, inraster, outraster
 	outname = rasterpath[rasterpath.rfind('/')+1: ]
-	outfullpath = outpath + outname[:outname.rfind('.')]+'_clipped.tif'
+	outfullpath = outpath + outname[:outname.rfind('.')]+'.tif'
 	
 	command = "gdalwarp --config GDAL_CACHEMAX 500 -wm 500 -of GTiff -cutline {0} -crop_to_cutline -dstnodata 1e+020 -cblend 2 {1}  {2}".format(shapepath, rasterpath, outfullpath)
 	print command
@@ -27,14 +27,14 @@ def clipToShapefile(rasterdirectory, shapefilepath, outputdirectory):
 			counter = counter+1
 		
 
-def clipBatch(var, year):
-	clipToShapefile( 'F:/climate/monthly/{0}/monthtrendstacked_{1}/'.format(var,year), 'C:/Users/Johnny/Documents/climatev2/shapefiles/BGD_adm/BGD_adm0.shp',"F:/climate/monthly/{0}/bangladesh/outgeotiff_monthtrendstacked_cblend_{1}/".format(var,year) )
+def clipBatch(var, percentile):
+	clipToShapefile( 'F:/climate/monthly/{0}/ensemble_{1}th/'.format(var, percentile), 'C:/Users/Johnny/Documents/climatev2/shapefiles/BGD_adm/BGD_adm0.shp',"F:/climate/monthly/{0}/bangladesh/ensemble_{1}/".format(var,percentile) )
 	# clipToShapefile( 'D:\\climate\\monthly\\{0}\\outgeotiff_{1}_rotated_reprojected_regridded_nd\\'.format(var,year), 'C:\Users\Johnny\Documents\climatev2\shapefiles\BGD_adm\BGD_adm0.shp',"F:\\climate\\monthly\\{0}\\bangladesh\\outgeotiff_cblend{1}\\".format(var,year) )
 
 
 def clipLoop():	
-	cvars = ['pr', 'tas', 'tasmin', 'tasmax' ]
-	years = [20, 40, 60, 80]
+	cvars = ['tasmax']
+	years = [10, 50, 90]
 	for cv in cvars:
 		for y in years:
 			clipBatch(cv, y)
