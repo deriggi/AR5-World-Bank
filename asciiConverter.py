@@ -70,7 +70,7 @@ def createOutputDirectory(outPath):
 def createAsASCII( inpath, band, outfolder ):
 	firstpart = 'gdal_translate --config GDAL_CACHEMAX 500 -of AAIGrid -b '
 	firstpart  = firstpart + str(band)
-	command = "{0} {1} {2}{3}_band-{4}{5}".format(firstpart, inpath , outfolder, inpath[inpath.rfind('\\')+1 : inpath.rfind('.tif')],band,'.asc');
+	command = "{0} {1} {2}{3}_band-{4}{5}".format(firstpart, inpath , outfolder, inpath[inpath.rfind('/')+1 : inpath.rfind('.tif')],band,'.asc');
 	print command
 	os.system(command)
 	print
@@ -93,7 +93,7 @@ def asciibatch(var, year, intemplate, outemplate):
 	
 	for c in childfiles:
 		if isTiff(c):
-			for i in xrange(1,241):
+			for i in xrange(1,12):
 				createAsASCII(inpath + c, i, outpath);
 
 def asciiBatchLoop():	
@@ -101,7 +101,7 @@ def asciiBatchLoop():
 	years = [20, 40, 60, 80]
 	for cv in cvars:
 		for y in years:
-			asciibatch(cv,y,'F:\\climate\\monthly\\{0}\\bangladesh\\outgeotiff_{1}\\'.format(cv,y),'F:\\climate\\monthly\\{0}\\bangladesh\\outasc_{1}\\'.format(cv,y) );
+			asciibatch(cv,y,'F:/climate/monthly/{0}/monthtrendstacked_{1}/'.format(cv,y),'F:/climate/monthly/{0}/monthtrendstacked_asc_{1}/'.format(cv,y) );
 
 asciiBatchLoop();
 	
