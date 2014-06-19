@@ -10,14 +10,15 @@ toCelsius <- function(y, na.rm=TRUE){ return  (y - 273.15) }
 convertData <- function(){
 	indices <- c(1:12)
 	cvars <- c('pr','tas', 'tasmin', 'tasmax')
-	years <- c(20, 40, 60, 80)
-	# years <- c(10, 50, 90)
+	# years <- c(20, 40, 60, 80)
+	years <- c(10, 50, 90)
 
 	for (year in years){
 		for (cvar in cvars){
 			# rootDir <- paste('F:/climate/monthly/',cvar,'/countries/BGD/ensemblestacked_',year,'_/', sep='')
 
-			rootDir <- paste('F:/climate/monthly/',cvar,'/monthtrendstacked_',year,'/', sep='')
+			# rootDir <- paste('F:/climate/monthly/',cvar,'/monthtrendstacked_',year,'/', sep='')
+			rootDir <- paste('F:/climate/monthly/',cvar,'/ensemblestacked_',year,'/', sep='')
 			
 			allFiles <- list.files(rootDir, full.names=FALSE, pattern=".*\\.tif$")
 			

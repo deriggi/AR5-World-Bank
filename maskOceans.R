@@ -4,6 +4,7 @@ library(raster)
 maskAllLoop <- function(maskT){
 	cvars <- c('pr','tas', 'tasmin', 'tasmax')
 	years <- c(20, 40, 60, 80)
+	# years <- c(10, 50, 90)
 
 	for (cvar in cvars){
 		for (y in years){
@@ -15,6 +16,7 @@ maskAllLoop <- function(maskT){
 maskAll <- function(maskTemplate, cvar, year){
 	
 	landcover <- raster(maskTemplate)
+	# rootFolder <- paste("F:/climate/monthly/",cvar,"/ensemblestacked_",year,"/converted/", sep="")
 	rootFolder <- paste("F:/climate/monthly/",cvar,"/monthtrendstacked_",year,"/converted/", sep="")
 
 	allFiles <- list.files(rootFolder, full.names=FALSE, pattern=".*\\.tif$")
@@ -24,7 +26,7 @@ maskAll <- function(maskTemplate, cvar, year){
 	for (oneFile in allFiles){
 		
 		thisPath <-  paste(rootFolder,oneFile, sep="") 
-		thisRaster <- raster(thisPath)
+		thisRaster <- stack(thisPath)
 
 		peerfolderPath <- substr(rootFolder, 0, nchar(rootFolder)-10)
 
@@ -37,7 +39,7 @@ maskAll <- function(maskTemplate, cvar, year){
 		
 		resampled_template <- resample(template_raster, thisRaster, method='bilinear')
 
-		mask(raster(thisPath), resampled_template, filename=outpath)
+		mask(thisRaster, resampled_template, filename=outpath)
 
 			# outfolder <- 
 	}
