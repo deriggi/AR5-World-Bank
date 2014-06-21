@@ -30,7 +30,7 @@ maskAll <- function(maskTemplate, cvar, year){
 
 		peerfolderPath <- substr(rootFolder, 0, nchar(rootFolder)-10)
 
-		outdir <- paste(peerfolderPath,'masked/',sep="")
+		outdir <- paste(peerfolderPath,'masked_2/',sep="")
 		dir.create(outdir)
 
 		outpath <- paste(outdir,oneFile,sep="")
