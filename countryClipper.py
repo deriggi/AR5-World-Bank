@@ -80,7 +80,7 @@ def getExcludes():
 
 def clipBatchBaseData(var, year, countrycode, shapepath, outputtemplate, fieldname):
 
-	clipToShapefile( 'F:/climate/monthly/{0}/monthtrendstacked_{1}/'.format(var, year), shapepath, outputtemplate.format(var,year, countrycode) , countrycode, fieldname)	
+	clipToShapefile( 'F:/climate/monthly/{0}/monthtrendstacked_{1}/converted/'.format(var, year), shapepath, outputtemplate.format(var,year, countrycode) , countrycode, fieldname)	
 
 
 
@@ -89,7 +89,7 @@ def clipBatchBaseData(var, year, countrycode, shapepath, outputtemplate, fieldna
 
 def clipBatchEnsembleData(var, year, countrycode, shapepath, outputtemplate, fieldname):
 
-	clipToShapefile( 'F:/climate/monthly/{0}/ensemblestacked_{1}/'.format(var, year), shapepath, outputtemplate.format(var,year, countrycode) , countrycode, fieldname)
+	clipToShapefile( 'F:/climate/monthly/{0}/ensemblestacked_{1}/converted/'.format(var, year), shapepath, outputtemplate.format(var,year, countrycode) , countrycode, fieldname)
 
 
 # def clipBatchEnsembleData(var, year, basinId):
@@ -129,19 +129,21 @@ def clipLoopBasinEnsembleData():
 def clipLoopEnsemble(shapepath, outputtemplate,fieldname, codesfile):	
 
 	countrycodes = getCodes(codesfile)
+	excludes  = getExcludes()
 	
 	cvars = ['pr', 'tas', 'tasmin', 'tasmax']
 	years = [ 10, 50, 90 ]
 	for countrycode in countrycodes:
 			for cv in cvars:
-				for y in years:
-					clipBatchEnsembleData(cv, y, countrycode)
+				if countrycode not in excludes:
+					for y in years:
+						clipBatchEnsembleData(cv, y, countrycode,shapepath, outputtemplate, fieldname)
 
 # getIsoCodes()
 
 # clipLoopBasinEnsembleData();
 
-clipLoopBaseData('F:/climate/vectors/regions/CKP_regions_dissolved_low/regions_proj.shp', 'F:/climate/monthly/{0}/regions/{2}/ensemblestacked_{1}_/', 'FID', 'F:/climate/vectors/regions/CKP_regions_dissolved_low/regions_proj.csv' )
+clipLoopEnsemble('F:/climate/vectors/countries/World_Polys_Low.shp', 'F:/climate/monthly/{0}/countries/{2}/ensemblestacked_{1}/', 'ISO_CODES', 'F:/climate/vectors/countries/isocodes.csv' )
 
 # gdalwarp -cblend 2-of GTiff -cutline C:/Users/Johnny/Documents/climatev2/shapefiles/BGD_adm/BGD_adm0.shp -crop_to_cutline -dstnodata 1e+020 F:\climate\monthly\pr\monthtrend_20\pr_Amon_bcc-csm1-1-m_rcp26_r1i1p1_202001-203912_1.tif  F:\bantest_1.tif
 
