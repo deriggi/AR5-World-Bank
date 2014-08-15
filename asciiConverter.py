@@ -93,15 +93,17 @@ def asciibatch(var, year, intemplate, outemplate):
 	
 	for c in childfiles:
 		if isTiff(c):
-			for i in xrange(1,12):
+			for i in xrange(1,13):
 				createAsASCII(inpath + c, i, outpath);
 
 def asciiBatchLoop():	
+	# cvars = ['tasmin', 'tasmax']
 	cvars = ['pr', 'tas', 'tasmin', 'tasmax' ]
-	years = [20, 40, 60, 80]
+	# years = [20, 40, 60, 80]
+	years = [10, 50, 90]
 	for cv in cvars:
 		for y in years:
-			asciibatch(cv,y,'F:/climate/monthly/{0}/monthtrendstacked_{1}/'.format(cv,y),'F:/climate/monthly/{0}/monthtrendstacked_asc_{1}/'.format(cv,y) );
+			asciibatch(cv,y,'F:/climate/monthly/{0}/ensemblestacked_{1}/masked/'.format(cv,y),'F:/climate/monthly/{0}/ensemblestacked_asc_{1}/'.format(cv,y) );
 
 asciiBatchLoop();
 	
