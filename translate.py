@@ -87,7 +87,88 @@ class NCFile:
 
 
 	def createAsGeotiff(self, bandinfo=''):
-		firstpart = 'gdal_translate -of GTiff '
+		firstpart = 'gdal_translate --config GDAL_CACHEMAX 500 -of GTiff '
+		firstpart  = firstpart + bandinfo
+		command = "{0} {1} {2}{3}".format(firstpart,self.filename,self.outpath+self.newfilename[self.newfilename.rfind('\\'):self.newfilename.rfind('.')],'.tif');
+		os.system(command)
+
+#=======================================================================================
+
+
+class HistoricalNCFile:
+	def __init__(self, filename,startyear, startmonth, endyear, endmonth):
+		self.startyear = int(startyear)
+		self.startmonth = int(startmonth)
+		self.endyear= int(endyear)
+		self.endmonth = int(endmonth)
+		self.filename = filename
+		self.outpath = None
+		
+	def calculateStartMonth(self, astartyear):
+		if astartyear < self.startyear:
+			return None
+
+		monthsFromYearDiff = (astartyear - self.startyear )*12 - 12
+		monthsFromMonthDiff= 13-self.startmonth
+
+		return monthsFromYearDiff + monthsFromMonthDiff + 1
+
+	def createBandSwtich(self, startMonth, count):
+		space = ' '
+		bandlist = []
+		for i in range(0, count):
+			bandlist.append('-b ' + str(startMonth))
+			startMonth = startMonth + 1
+		return space.join(bandlist)
+
+	def getYearDifference(self):
+		return self.endyear - self.startyear
+
+	def isProcessible(self):
+		return self.getYearDifference >= 19 and self.startyear >= 1500;
+
+	def findBestStartYear(self, gt=0):
+		startyears = [1965, 1985]
+		for sy in startyears:
+			diff = sy - self.startyear 
+			if  sy >gt and diff > 0  and ( sy + 20) <= self.endyear:
+				return sy
+		return None
+
+	def getNumberOfBlocks(self):
+		bestStart = self.findBestStartYear();
+		if bestStart is not None:
+			print 'working'
+			# return 80 / 20
+			return (self.endyear - self.findBestStartYear() ) / 20  
+		return 0
+
+	def countBands(self):
+		print self.filename
+		src = gdal.Open(self.filename)
+		numBands =  src.GetRasterCount()
+		src = None
+		return numBands
+
+	def createGeotiffFolder(self,outfoldername):
+		if not os.path.exists(outfoldername):
+			os.makedirs(outfoldername)
+		self.outpath = outfoldername + '\\'
+
+	def setName(self, newName):
+		self.filename = newName
+	
+	def getName(self):
+		return self.filename
+
+	def replaceYearSuffix(self, newsuffix):
+		# pr_Amon_bcc-csm1-1_rcp85_r1i1p1_200601-209912.nc
+		lastUnderscore = self.filename.rfind('_')
+		self.newfilename = self.filename[:lastUnderscore+1] + newsuffix + '.tif'
+
+
+	def createAsGeotiff(self, bandinfo=''):
+		firstpart = 'gdal_translate --config GDAL_CACHEMAX 500 -of GTiff '
 		firstpart  = firstpart + bandinfo
 		command = "{0} {1} {2}{3}".format(firstpart,self.filename,self.outpath+self.newfilename[self.newfilename.rfind('\\'):self.newfilename.rfind('.')],'.tif');
 		os.system(command)
@@ -111,6 +192,27 @@ def parsepath(path):
 		endyear = end[:4]
 		endmonth = end[4:]
 		sd = NCFile(path, startyear, startmonth, endyear, endmonth)
+
+	return sd;
+
+
+def parseHistoricalPath(path):
+
+	match = re.search(r'\d\d\d\d\d\d\-\d\d\d\d\d\d\.nc',path)
+	sd = None
+
+	if match:
+		matchedpart = match.group()
+		matchedpart = matchedpart[0:13]
+		start = matchedpart.split('-')[0]
+		end = matchedpart.split('-')[1]
+
+		startyear = start[:4]
+		startmonth = start[4:]
+
+		endyear = end[:4]
+		endmonth = end[4:]
+		sd = HistoricalNCFile(path, startyear, startmonth, endyear, endmonth)
 
 	return sd;
 
@@ -155,10 +257,46 @@ def parsenc(year):
 					bandinfo = sd.createBandSwtich(int(calculatedStartMonth),20*12)
 					sd.createAsGeotiff(bandinfo)
 
-parsenc(year = 2020)
-parsenc(year = 2040)
-parsenc(year = 2060)
-parsenc(year = 2080)
+
+def parseHistoricalNc(year, cvar):
+	root = 'D:\\climate\\monthly{0}\\historical\\'.format(cvar);
+	childfiles = os.listdir(root)
+	outTiffPath = 'F:\\climate\\historical\\{1}\\outgeotiff_{0}'.format(year, cvar)
+	
+	numMonths = 12*20
+	newsuffix = createYearBandSuffix(year,numMonths)
+
+	for ncfile in childfiles:
+		sd  = parseHistoricalPath(root + ncfile)
+		if sd != None:
+			sd.createGeotiffFolder(outTiffPath)
+			print
+			print '==================================='
+			print "{0}".format(root + ncfile)
+			if sd.isProcessible():
+				nextBestStartYear = sd.findBestStartYear(year-1)
+				sd.replaceYearSuffix(newsuffix)
+
+				print 'new out {0} '.format(sd.filename)
+				print "sy:\t\t{0}".format(nextBestStartYear)
+				print "blocks:\t\t{0}".format(sd.getNumberOfBlocks())
+				print "startmonth:\t\t{0}".format(sd.calculateStartMonth(year))
+
+				calculatedStartMonth = sd.calculateStartMonth(year) 
+				if calculatedStartMonth != None and nextBestStartYear !=None and int(nextBestStartYear) == year:
+					print 'creating:\tyes';
+					bandinfo = sd.createBandSwtich(int(calculatedStartMonth),20*12)
+					sd.createAsGeotiff(bandinfo)
+
+years = [1965,1985]
+cvars = ['tasmin', 'tasmax', 'tas', 'pr']
+
+for cvar in cvars:
+	for y in years:
+		parseHistoricalNc(y,cvar)
+
+
+
 
 
 				
