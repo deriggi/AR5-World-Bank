@@ -38,7 +38,7 @@ doIt <- function (thevar, arealUnit){
 	}
 }
 
-doItEnsembleStyle <- function (thevar){
+doItEnsembleStyle <- function (thevar, arealUnit){
 	rootDir <- paste("F:/climate/monthly/",thevar, "/",arealUnit,"/", sep="")
 	outcsv <- paste("F:/climate/monthly/", thevar, "/",arealUnit,"/ensemble_means.csv", sep="")
 	years = c("10", "50", "90")
@@ -97,7 +97,7 @@ doItEnsembleStyle <- function (thevar){
 # }
 
 
-# doIt('pr', 'basins')
-# doIt('tas', 'basins')
-doIt('tasmin', 'basins')
-doIt('tasmax', 'basins')
+doItEnsembleStyle('pr', 'regions')
+doItEnsembleStyle('tas', 'regions')
+doItEnsembleStyle('tasmin', 'regions')
+doItEnsembleStyle('tasmax', 'regions')
