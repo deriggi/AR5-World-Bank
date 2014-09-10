@@ -9,15 +9,12 @@ historicalDir <- paste("F:/climate/historical/",cvar,"/monthtrend_", year ,  '/'
 futureDir <- paste("F:/climate/monthly/",cvar,"/monthtrendstacked_", fyear ,  '/', sep="")
 
 historicalFiles <- list.files(historicalDir, full.names=FALSE, pattern="\\.tif$")
-futureFiles <- list.files(futureDir, full.names=FALSE, pattern="\\.tif$")
 
 amon <- "Amon_"
 historical <- "_historical_"
-# amon <- "r1i1p1_"
-sizeamon <- nchar(amon)
 months <- c(1:12)
-# for each historical file
 
+# for each historical file
 for (histFile in historicalFiles) {
 	
 	# get the model for the hist file
@@ -31,7 +28,6 @@ for (histFile in historicalFiles) {
 	# get future files of this model
 	futureFiles <- list.files(futureDir, full.names=FALSE, pattern=paste(".*",partmodel,".*","\\.tif$", sep=""));
 		
-
 	for ( futureFile in futureFiles ){
 		write(futureFile,stdout())
 		
@@ -43,7 +39,8 @@ for (histFile in historicalFiles) {
 			historicalRazzy <- raster(paste( historicalDir,histFile, sep=""), band=month);
 			
 			# TODO resample historical to that of future
-			
+
+			# subtract resampled historical from future
 			diffRazzy <- futureRazzy - historicalRazzy
 			meanDiff <- cellStats(diffRazzy, stat='mean')
 			write(meanDiff, stdout());
