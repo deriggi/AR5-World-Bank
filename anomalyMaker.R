@@ -31,6 +31,8 @@ for (histFile in historicalFiles) {
 	for ( futureFile in futureFiles ){
 		write(futureFile,stdout())
 		
+		# difstack
+		diffStack <- stack()
 		# for each month	
 		for(month in months){
 
@@ -38,14 +40,17 @@ for (histFile in historicalFiles) {
 			futureRazzy <- raster(paste(futureDir, futureFile, sep=""), band=month);
 			historicalRazzy <- raster(paste( historicalDir,histFile, sep=""), band=month);
 			
-			# TODO resample historical to that of future
+			#  resample historical to that of future
+			historicalResample <- resample(historicalRazzy, futureRazzy, method='bilinear')
 
 			# subtract resampled historical from future
-			diffRazzy <- futureRazzy - historicalRazzy
-			meanDiff <- cellStats(diffRazzy, stat='mean')
-			write(meanDiff, stdout());
+			diffRazzy <- futureRazzy - historicalResample
+			diffStack <- addLayer(diffStack,diffRazzy)
+			# meanDiff <- cellStats(diffRazzy, stat='mean')
+			write(nlayers(diffStack),stdout())
 				
 		}
+		#TODO write diffstack out to file
 
 	}
 
