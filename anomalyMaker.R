@@ -1,7 +1,5 @@
-cvar<-'pr'
-year <- 1965
 
-fyear<- 20
+makeAnom <- function(cvar, year, fyear){
 # list files in historical
 historicalDir <- paste("F:/climate/historical/",cvar,"/monthtrend_", year ,  '/', sep="")
 
@@ -14,47 +12,73 @@ amon <- "Amon_"
 historical <- "_historical_"
 months <- c(1:12)
 
-# for each historical file
-for (histFile in historicalFiles) {
-	
-	# get the model for the hist file
-	amonIndex <- regexpr(amon, histFile) + nchar(amon) 
-	histIndex <- regexpr(historical, histFile)  -1
-	
-	# get the model
-	partmodel <- substr( histFile, amonIndex, histIndex)
-	write(partmodel, stdout())
-
-	# get future files of this model
-	futureFiles <- list.files(futureDir, full.names=FALSE, pattern=paste(".*",partmodel,".*","\\.tif$", sep=""));
+	# for each historical file
+	for (histFile in historicalFiles) {
 		
-	for ( futureFile in futureFiles ){
-		write(futureFile,stdout())
+		# get the model for the hist file
+		amonIndex <- regexpr(amon, histFile) + nchar(amon) 
+		histIndex <- regexpr(historical, histFile)  -1
 		
-		# difstack
-		diffStack <- stack()
-		# for each month	
-		for(month in months){
+		# get the model
+		partmodel <- substr( histFile, amonIndex, histIndex)
+		write(partmodel, stdout())
 
-			# get future and historic of same month
-			futureRazzy <- raster(paste(futureDir, futureFile, sep=""), band=month);
-			historicalRazzy <- raster(paste( historicalDir,histFile, sep=""), band=month);
+		# get future files of this model
+		futureFiles <- list.files(futureDir, full.names=FALSE, pattern=paste(".*",partmodel,".*","\\.tif$", sep=""));
+
+		for ( futureFile in futureFiles ){
+			write(futureFile,stdout())
 			
-			#  resample historical to that of future
-			historicalResample <- resample(historicalRazzy, futureRazzy, method='bilinear')
+			# difstack
+			diffStack <- stack()
 
-			# subtract resampled historical from future
-			diffRazzy <- futureRazzy - historicalResample
-			diffStack <- addLayer(diffStack,diffRazzy)
-			# meanDiff <- cellStats(diffRazzy, stat='mean')
-			write(nlayers(diffStack),stdout())
+			# for each month	
+			for(month in months){
+
+				# get future and historic of same month
+				futureRazzy <- raster(paste(futureDir, futureFile, sep=""), band=month);
+				historicalRazzy <- raster(paste( historicalDir,histFile, sep=""), band=month);
 				
-		}
-		#TODO write diffstack out to file
+				#  resample historical to that of future
+				historicalResample <- resample(historicalRazzy, futureRazzy, method='bilinear')
 
+				# subtract resampled historical from future
+				diffRazzy <- futureRazzy - historicalResample
+				diffStack <- addLayer(diffStack,diffRazzy)
+
+
+			}
+
+			# make anomaly folder..file?
+			anomDir <- paste("F:/climate/anom/",cvar,"_", fyear ,  '/', sep="")
+			# dir.create(anomDir)
+			outfile <- paste(anomDir,futureFile, sep="")
+			write(outfile, stdout())
+
+			#TODO write diffstack out to file
+			writeRaster(diffStack, outfile)
+
+		}
+
+	}
+}
+
+loopAnom <- function(){
+	
+	cvar<-c('pr', 'tas', 'tasmin', 'tasmax')
+	year <- 1965
+	fyear<- c(20, 40, 60, 80)
+	
+	for (cv in cvar){
+		for (fy in fyear){
+			makeAnom(cv, year, fyear)
+		}
 	}
 
 }
+
+loopAnom()
+
 
 	# find matching model
 	# create stack
