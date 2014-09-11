@@ -1,16 +1,21 @@
-
+library(raster)
 makeAnom <- function(cvar, year, fyear){
-# list files in historical
-historicalDir <- paste("F:/climate/historical/",cvar,"/monthtrend_", year ,  '/', sep="")
+	# list files in historical
+	historicalDir <- paste("F:/climate/historical/",cvar,"/monthtrend_", year ,  '/', sep="")
 
-# list files in model
-futureDir <- paste("F:/climate/monthly/",cvar,"/monthtrendstacked_", fyear ,  '/', sep="")
+	# list files in model
+	futureDir <- paste("F:/climate/monthly/",cvar,"/monthtrendstacked_", fyear ,  '/', sep="")
 
-historicalFiles <- list.files(historicalDir, full.names=FALSE, pattern="\\.tif$")
+	historicalFiles <- list.files(historicalDir, full.names=FALSE, pattern="\\.tif$")
 
-amon <- "Amon_"
-historical <- "_historical_"
-months <- c(1:12)
+	amon <- "Amon_"
+	historical <- "_historical_"
+	months <- c(1:12)
+
+	# make anom dir
+	anomDir <- paste("F:/climate/anom/",cvar,"_", fyear ,  '/', sep="")
+	write( anomDir, stdout())
+	dir.create(anomDir, recursive=TRUE)
 
 	# for each historical file
 	for (histFile in historicalFiles) {
@@ -21,6 +26,7 @@ months <- c(1:12)
 		
 		# get the model
 		partmodel <- substr( histFile, amonIndex, histIndex)
+		partmodel <- paste(partmodel,'_', sep="")
 		write(partmodel, stdout())
 
 		# get future files of this model
@@ -34,7 +40,7 @@ months <- c(1:12)
 
 			# for each month	
 			for(month in months){
-
+				
 				# get future and historic of same month
 				futureRazzy <- raster(paste(futureDir, futureFile, sep=""), band=month);
 				historicalRazzy <- raster(paste( historicalDir,histFile, sep=""), band=month);
@@ -46,12 +52,10 @@ months <- c(1:12)
 				diffRazzy <- futureRazzy - historicalResample
 				diffStack <- addLayer(diffStack,diffRazzy)
 
-
+				write(month, stdout())
 			}
 
-			# make anomaly folder..file?
-			anomDir <- paste("F:/climate/anom/",cvar,"_", fyear ,  '/', sep="")
-			# dir.create(anomDir)
+			# write file
 			outfile <- paste(anomDir,futureFile, sep="")
 			write(outfile, stdout())
 
@@ -71,7 +75,7 @@ loopAnom <- function(){
 	
 	for (cv in cvar){
 		for (fy in fyear){
-			makeAnom(cv, year, fyear)
+			makeAnom(cv, year, fy)
 		}
 	}
 
