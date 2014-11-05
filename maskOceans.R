@@ -14,14 +14,17 @@ maskAllLoop <- function(maskT){
 }
 
 maskAll <- function(maskTemplate, cvar, year){
-	
+	basePath <- "F:/climate/anom/"
 	landcover <- raster(maskTemplate)
 	# rootFolder <- paste("F:/climate/monthly/",cvar,"/ensemblestacked_",year,"/converted/", sep="")
-	rootFolder <- paste("F:/climate/monthly/",cvar,"/monthtrendstacked_",year,"/converted/", sep="")
+	rootFolder <- paste(basePath,cvar,"_",year,'/', sep="")
 
 	allFiles <- list.files(rootFolder, full.names=FALSE, pattern=".*\\.tif$")
 
 	template_raster <- raster(aWeeCru)
+
+	outdir <- paste(basePath, 'masked/' ,cvar, '_',year ,'/',sep="")
+	dir.create(outdir, recursive=TRUE)
 
 	for (oneFile in allFiles){
 		
@@ -30,8 +33,7 @@ maskAll <- function(maskTemplate, cvar, year){
 
 		peerfolderPath <- substr(rootFolder, 0, nchar(rootFolder)-10)
 
-		outdir <- paste(peerfolderPath,'masked_2/',sep="")
-		dir.create(outdir)
+		
 
 		outpath <- paste(outdir,oneFile,sep="")
 
@@ -41,7 +43,6 @@ maskAll <- function(maskTemplate, cvar, year){
 
 		mask(thisRaster, resampled_template, filename=outpath)
 
-			# outfolder <- 
 	}
 
 }

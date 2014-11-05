@@ -49,7 +49,16 @@ makeAnom <- function(cvar, year, fyear){
 				historicalResample <- resample(historicalRazzy, futureRazzy, method='bilinear')
 
 				# subtract resampled historical from future
-				diffRazzy <- futureRazzy - historicalResample
+				
+				if(cvar == 'pr'){
+					write('doing pr', stdout())
+					diffRazzy <- (futureRazzy - historicalResample)/historicalResample
+				}else{
+					write('doing temperature', stdout())
+					diffRazzy <- futureRazzy - historicalResample
+				}
+
+
 				diffStack <- addLayer(diffStack,diffRazzy)
 
 				write(month, stdout())
@@ -59,9 +68,10 @@ makeAnom <- function(cvar, year, fyear){
 			outfile <- paste(anomDir,futureFile, sep="")
 			write(outfile, stdout())
 
-			#TODO write diffstack out to file
+			# write diffstack out to file
 			writeRaster(diffStack, outfile)
-
+			
+			#TODO, handle precip differently from temperature (f-h)/h
 		}
 
 	}
@@ -69,7 +79,8 @@ makeAnom <- function(cvar, year, fyear){
 
 loopAnom <- function(){
 	
-	cvar<-c('pr', 'tas', 'tasmin', 'tasmax')
+	# cvar<-c('pr', 'tas', 'tasmin', 'tasmax')
+	cvar<-c( 'pr')
 	year <- 1965
 	fyear<- c(20, 40, 60, 80)
 	
