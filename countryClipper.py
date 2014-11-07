@@ -143,7 +143,7 @@ def clipLoopEnsemble(shapepath, outputtemplate,fieldname, codesfile):
 
 # clipLoopBasinEnsembleData();
 
-clipLoopEnsemble('F:/climate/vectors/regions/CKP_regions_dissolved_low/CKP_regions_dissolved.shp', 'F:/climate/monthly/{0}/regions/{2}/ensemblestacked_{1}/', 'FID', 'F:/climate/vectors/regions/CKP_regions_dissolved_low/regions_proj.csv' )
+# clipLoopEnsemble('F:/climate/vectors/regions/CKP_regions_dissolved_low/CKP_regions_dissolved.shp', 'F:/climate/monthly/{0}/regions/{2}/ensemblestacked_{1}/', 'FID', 'F:/climate/vectors/regions/CKP_regions_dissolved_low/regions_proj.csv' )
 
 # gdalwarp -cblend 2-of GTiff -cutline C:/Users/Johnny/Documents/climatev2/shapefiles/BGD_adm/BGD_adm0.shp -crop_to_cutline -dstnodata 1e+020 F:\climate\monthly\pr\monthtrend_20\pr_Amon_bcc-csm1-1-m_rcp26_r1i1p1_202001-203912_1.tif  F:\bantest_1.tif
 
