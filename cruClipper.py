@@ -83,7 +83,7 @@ def clipBatch(rasterdirectory, shapefile, outpath, codes, fieldName):
 
 #######################3
 def run():
-	clipBatch('F:/climate/cru/09_12/pre/pre/', 'F:/climate/vectors/countries/World_Polys_Low.shp', 'F:/climate/cru/09_12/pre/pre/' , getIsoCodes(), 'ISO_CODES')	
+	clipBatch('F:/climate/cru/09_12/pre/pre/', 'F:/climate/vectors/countries/World_Polys_Low.shp', 'F:/climate/cru/09_12/pre/pre/countryoutput/' , getIsoCodes(), 'ISO_CODES')	
 
 def convertAll():
 	rasterRoot = 'F:/climate/cru/09_12/pre/pre/';
