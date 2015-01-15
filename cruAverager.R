@@ -4,10 +4,10 @@ averageCrus <- function (){
 	# take the rasters that we cout from cruClipper.py and apply this to them
 
 	# the root of the country rasters
-	rootDir <- paste("F:/climate/cru/09_12/pre/pre/countryoutput/")
+	rootDir <- paste("F:/climate/cru/09_12/temp/temp/countryoutput/")
 	
 	# the csv file with the tabular output
-	outcsv <- paste("F:/climate/cru/09_12/pre/pre/countryoutput/cruaverage.csv")
+	outcsv <- paste("F:/climate/cru/09_12/temp/temp/countryoutput/cruaverage.csv")
 	boundarycodes <- list.files(rootDir, full.names=FALSE)
 
 	sort(boundarycodes)
