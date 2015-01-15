@@ -4,7 +4,7 @@ Here I will host the simple scripts and processes I have used for the climate da
 ### Rotating the files
 Many climate models a longitudnal scale which runs from 0 -> 360 instead of the standard 0 -> -180. For these data sets we first had to rotate the data
 
-![Alt text](images/rotate.png)
+![Alt text](images/rotation.png)
 
 
 
