@@ -7,9 +7,11 @@ A python script was used to pluck out the years we wanted from the netcdf and th
 ### Rotating the files
 Many climate models a longitudnal scale which runs from 0 -> 360 instead of the standard 0 -> -180. For these data sets we first had to rotate the data
 
+The following image is an example of a raster that neeeds to be rotated. you will notice that you cannot simply shift the raster west because then the hemispheres would not align
+
 ![Alt text](images/rotation.png)
 
-[Iterating through many files and rotating them](https://github.com/deriggi/AR5-World-Bank/blob/master/rotateAll.R)
+[Code for Iterating through many files and rotating them](https://github.com/deriggi/AR5-World-Bank/blob/master/rotateAll.R)
 
 ### Rotating the files
 
