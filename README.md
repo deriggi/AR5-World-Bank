@@ -28,7 +28,7 @@ We want to show the monthly averages for each 20 year period rather than the tim
 
 We create a raster stack of all the January months, average the stack, write the output, and then move on to the next month.
 
-[Code for stacking rasters](https://github.com/deriggi/AR5-World-Bank/blob/master/monthTrender.R)
+[Code for averaging calculating monthly averages](https://github.com/deriggi/AR5-World-Bank/blob/master/monthTrender.R)
 
 ### Masking the data
 
