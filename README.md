@@ -1,7 +1,7 @@
 ## Climate data processing
 This is the documenation for the AR5 climate data processing. Most of the work was done with the R package called raster, and with Python and gdal using the osgeo4w toolset
 
-## Converting to GeoTiff
+### Converting to GeoTiff
 A python script was used to pluck out the years we wanted from the netcdf and then convert them to GeoTiff. The end result was geotiff files in full time-series from 2020-2039, 2040-2059, 2060-2079, and 2080-2099. 
 
 [Code for selecting slices of the .NC files and converting to geotiff ](https://github.com/deriggi/AR5-World-Bank/blob/master/translate.py)
@@ -29,6 +29,23 @@ We want to show the monthly averages for each 20 year period rather than the tim
 We create a raster stack of all the January months, average the stack, write the output, and then move on to the next month.
 
 [Code for stacking rasters](https://github.com/deriggi/AR5-World-Bank/blob/master/monthTrender.R)
+
+### Masking the data
+
+We found out after processing the global files that we then needed to mask the oceans out of the rasters
+
+[Code for masking out the oceans](https://github.com/deriggi/AR5-World-Bank/blob/master/maskOceans.R)
+
+### Clipping each raster against a shapefile with many polygons
+
+To get the average for each country, we make an individual raster for each country boundary. So, we iterate through each country in a world vector file and then clip it against each raster in our dataset. Therefore the number of iterations is num_countries * num_rasters
+
+[Code for clipping many rasters against each geom in a shapefile](https://github.com/deriggi/AR5-World-Bank/blob/master/countryClipper.py)
+
+
+
+
+
 
 
 
