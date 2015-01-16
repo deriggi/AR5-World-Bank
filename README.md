@@ -42,6 +42,15 @@ To get the average for each country, we make an individual raster for each count
 
 [Code for clipping many rasters against each geom in a shapefile](https://github.com/deriggi/AR5-World-Bank/blob/master/countryClipper.py)
 
+### Average each raster and push output into a csv file
+
+For the API data we have to take the average of each raster and then put it into a csv file, so that it can then be loaded into the API
+
+[Code for taking the average for a set of rasters and then putting the output in a csv file](https://github.com/deriggi/AR5-World-Bank/blob/master/averageCalculator.R)
+
+
+
+
 
 
 
