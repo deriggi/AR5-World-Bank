@@ -39,8 +39,10 @@ We found out after processing the global files that we then needed to mask the o
 [Code for masking out the oceans](https://github.com/deriggi/AR5-World-Bank/blob/master/maskOceans.R)
 
 ### Clipping each raster against a shapefile with many polygons
-[Shapefiles used for this clipping activity](https://www.dropbox.com/sh/i46xxj5g3948hm7/AABVM5XPswWdA6yg8M6kHBnwa?dl=0)
+
 To get the average for each country, we make an individual raster for each country boundary. So, we iterate through each country in a world vector file and then clip it against each raster in our dataset. Therefore the number of iterations is num_countries * num_rasters
+
+[Shapefiles used for this clipping activity](https://www.dropbox.com/sh/i46xxj5g3948hm7/AABVM5XPswWdA6yg8M6kHBnwa?dl=0)
 
 [Code for clipping many rasters against each geom in a shapefile](https://github.com/deriggi/AR5-World-Bank/blob/master/countryClipper.py)
 
