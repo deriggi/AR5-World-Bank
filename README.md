@@ -4,6 +4,7 @@ This is the documenation for the AR5 climate data processing. Most of the work w
 ### Converting to GeoTiff
 A python script was used to pluck out the years we wanted from the netcdf and then convert them to GeoTiff. The end result was geotiff files in full time-series from 2020-2039, 2040-2059, 2060-2079, and 2080-2099. 
 
+Note that this is probably one of the least reusable code sections as it is sort of untidy. Basically it's job though is to create [gdal_translate] (http://www.gdal.org/gdal_translate.html) statements and execute them on specific files
 [Code for selecting slices of the .NC files and converting to geotiff ](https://github.com/deriggi/AR5-World-Bank/blob/master/translate.py)
 
 
